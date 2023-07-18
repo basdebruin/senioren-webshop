@@ -1,0 +1,44 @@
+// Styles and import of Spectre.css
+
+$primary-color: #046B99;
+$secondary-color: #B0E1EB;
+$highlight-color: #02BFE7;
+$dark-color: black;
+$light-color: white;
+$accessibility-blue: #2653E8;
+
+// Set global root variables
+:root {
+    --primary-color: #046B99;
+    --secondary-color: #B0E1EB;
+    --highlight-color: #02BFE7;
+    --dark-color: black;
+    --light-color: white;
+    --accessibility-blue: #2653E8;
+
+}
+* {
+    box-sizing: border-box;
+}
+
+
+@import "node_modules/spectre.css/src/spectre";
+
+
+// ---
+// Global Styles Override
+// ---
+
+.btn, .form-input {
+    padding: .5rem 1rem;
+    height: auto;
+}
+.btn {
+    font-weight: 500;
+}
+
+.btn.btn-primary {
+    background-color: $secondary-color;
+    border-color: $highlight-color;
+    color: $dark-color;
+}
