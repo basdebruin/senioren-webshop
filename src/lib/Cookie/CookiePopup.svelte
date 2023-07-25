@@ -1,12 +1,12 @@
-<script>
+<script lang="ts" type="module">
     let popupVisible= true;
 
     let close = () => 
         popupVisible = false;
 </script>
 
-<article class="modal" class:active={popupVisible}>
-    <a href="#" class="modal-overlay" aria-label="Close cookie popup" on:click={close}></a>
+<article class="modal" class:active={popupVisible} aria-hidden={!popupVisible}>
+    <a href="#close" class="modal-overlay" aria-label="Close cookie popup" on:click={close} tabindex="0"></a>
     <div class="modal-container">
         <div class="modal-title">
             <h2>Cookie instellingen</h2>
@@ -18,7 +18,7 @@
                 <button class="btn btn-primary">
                     Voorkeuren aanpassen
                 </button>
-                <a href="#">Informatie over gegevensbescherming</a>
+                <a href="#close">Informatie over gegevensbescherming</a>
             </div>
 
             <div class="col-3">

@@ -51,6 +51,7 @@
         width: 100%;
         height: 3rem;
         background-color: var(--primary-color);
+        z-index: 900;
 
         display: flex;
         flex-flow: row nowrap;

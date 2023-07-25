@@ -2,8 +2,9 @@
 
 <div class="hero">
 
+    <img src="/images/logo-accessibility.png" alt="Stichting Accessibility">
     <h1>Voorbeeldontwerp Webwinkel</h1>
-    <h2>voor ouderen</h2>
+    <h2>voor senioren</h2>
 
 </div>
 
@@ -21,13 +22,16 @@
         </a>
     </div>
     <div class="col-4">
-        <img src="https://placekitten.com/500/500" alt>
+        <img src="https://placekitten.com/500/500" alt="">
     </div>
 </article>
 
 </div>
 
 <style lang="scss">
+    h2 {
+        font-weight: normal;
+    }
     .fixed-page {
         position: fixed;
         top: 0;
@@ -40,6 +44,11 @@
         color: white;
 
         padding: 3rem;
+
+        img {
+            width: 20%;
+            margin-bottom: 1rem;
+        }
     }
 
     article {

@@ -29,6 +29,8 @@ $accessibility-blue: #2653E8;
 // Global Styles Override
 // ---
 
+// -- Buttons
+
 .btn, .form-input {
     padding: .5rem 1rem;
     height: auto;
@@ -42,3 +44,9 @@ $accessibility-blue: #2653E8;
     border-color: $highlight-color;
     color: $dark-color;
 }
+
+.btn.btn-small {
+    padding: .2rem .7rem;
+}
+
+// -- Container
