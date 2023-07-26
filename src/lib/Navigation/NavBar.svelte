@@ -5,16 +5,39 @@
 
     <div class="popover popover-bottom">
         <button class="btn btn-primary">
-            <i class="ri-menu-2-line"></i>
-            Categorieën
+            Alle producten
+            <i class="ri-arrow-down-s-line"></i>
         </button>
         <div class="popover-container">
             <ul class="menu">
                 <li class="menu-item">
-                    <a href="#">Thing 1</a>
+                    <a href="/producten/wasmachines">Wasmachines</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#">Thing 2</a>
+                    <a href="/producten/wasdrogers">Wasdrogers</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/producten/koelkasten">Koelkasten</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/producten/vriezers">Vriezers</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/producten/vaatwassers">Vaatwassers</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/producten/smartphones">Smartphones</a>
+                <li class="menu-item">
+                    <a href="/producten/tablets">Tablets</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/producten/monitors">Monitors</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/producten/laptops">Laptops</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/waterkokers">Waterkokers</a>
                 </li>
             </ul>
         </div>
@@ -26,7 +49,7 @@
             <input class="form-input" type="text" placeholder="Waar ben je naar op zoek?">
             <button class="btn btn-primary input-group-btn">
                 <i class="ri-search-line"></i>
-                Search
+                Zoeken
             </button>
         </div>
     </section>
