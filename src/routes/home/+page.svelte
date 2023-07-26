@@ -1,5 +1,6 @@
 <script>
     import CookiePopup from "$lib/Cookie/CookiePopup.svelte";
+    import Tooltip from "$lib/Tooltip/Tooltip.svelte";
 
 </script>
 
@@ -12,7 +13,14 @@
         <a href="/klanten-service" class="btn btn-small">Klantenservice</a>
     </div>
 
-    <h2 class="text-primary">Kies een product</h2>
+    <h2 class="text-primary">
+        <Tooltip>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, aliquam saepe. Earum minus consequuntur excepturi quae beatae quod libero dolore autem ea voluptatum quo repudiandae vero ad, aperiam vel hic!</p>
+        </Tooltip>
+        Kies een product
+    </h2>
+
+
     <ul class="columns products">
         <li class="column">
             <a href="product-wasmachines" class="btn">
