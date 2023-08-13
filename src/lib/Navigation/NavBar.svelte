@@ -70,8 +70,8 @@ import Logo from "./Logo.svelte";
             Account
         </a>
         <a class="btn btn-primary" href="/shopping-cart">
-            <i class="ri-shopping-cart-2-line"></i>
-            Winkelwagen
+            <i class="ri-shopping-basket-2-line"></i>
+            Winkelmandje
         </a>
     </section>
 </nav>
