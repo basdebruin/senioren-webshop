@@ -22,7 +22,7 @@
         </a>
     </div>
     <div class="col-4">
-        <img src="https://placekitten.com/500/500" alt="">
+        <img src="/images/stock-photo-ipad.png" alt="oudere mevrouw op de bank met een ipad">
     </div>
 </article>
 

@@ -3,7 +3,11 @@
     import 'remixicon/fonts/remixicon.css';
     
     import NavBar from '$lib/Navigation/NavBar.svelte';
+    import Footer from '$lib/Footer/Footer.svelte';
 </script>
 
-<NavBar></NavBar>
+<NavBar />
+
 <slot></slot>
+
+<Footer />

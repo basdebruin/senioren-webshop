@@ -1,10 +1,11 @@
 <div class="tooltip-container">
     <span class="tooltip-icon">
-        <i class="ri-information-line"></i>
+        <img src="/tooltip_icon.svg" alt="tooltip">
+
+        <article class="tooltip-content">
+            <slot></slot>
+        </article>
     </span>
-    <article class="tooltip-content">
-        <slot></slot>
-    </article>
 </div>
 
 <style lang="scss">
@@ -18,7 +19,7 @@
     .tooltip-icon {
         position: absolute;
         top: -30px; left: -30px;
-        width: 40px; height: 40px;
+        width: 34px; height: 34px;
         background: pink;
         color: brown;
         border: solid 2px brown;
@@ -30,21 +31,27 @@
         justify-content: center;
 
         cursor: help;
+
+        img {
+            width: 30px;
+        }
     }
 
     .tooltip-content {
         visibility: hidden;
         position: absolute;
-        top: 0; left: 0;
+        top: .5rem; left: .5rem;
         width: 500px;
-        background: white;
-        border: solid 1px var(--highlight-color);
-        padding: 1rem 0 0 1rem;
+        background: pink;
+        border: solid 1px brown;
+        padding: 1rem;
+        line-height: 1.3;
         box-shadow: 0px 5px 10px rgba(0,0,0,.1);
         font-size: .7rem;
+        color: var(--dark-color);
     }
 
-    .tooltip-icon:hover + .tooltip-content {
+    .tooltip-icon:hover .tooltip-content {
         visibility: visible;
     }
 </style>

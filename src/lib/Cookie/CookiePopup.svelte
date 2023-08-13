@@ -1,4 +1,6 @@
 <script lang="ts" type="module">
+    import Tooltip from "$lib/Tooltip/Tooltip.svelte";
+
     let popupVisible= true;
 
     let close = () => 
@@ -9,6 +11,10 @@
     <a href="#close" class="modal-overlay" aria-label="Close cookie popup" on:click={close} tabindex="0"></a>
     <div class="modal-container">
         <div class="modal-title">
+            <Tooltip>
+                <b>Cookie Pop-ups. </b>Lorem ipsum dolor sit amet consectetur. Sed sit nibh leo urna venenatis viverra integer cursus at. Accumsan mauris vehicula dui id. Sed suspendisse nibh lectus arcu mauris mollis sit at nulla. At nulla non commodo imperdiet vulputate leo elit. Vestibulum posuere vestibulum viverra eu. Morbi praesent ultrices habitant nunc est in interdum scelerisque. Aliquet suscipit netus elementum elementum eu ullamcorper nec. Interdum orci nullam posuere ut quam in. Ullamcorper egestas viverra purus gravida commodo.
+                Aliquet cras in eu ultricies mattis. Nibh sit bibendum aliquet risus sem quam facilisis turpis. Adipiscing ridiculus a nulla interdum ullamcorper justo morbi. 
+            </Tooltip>
             <h2>Cookie instellingen</h2>
         </div>
         <div class="columns">

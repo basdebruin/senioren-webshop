@@ -1,4 +1,5 @@
 <script>
+    // @ts-ignore
     import CookiePopup from "$lib/Cookie/CookiePopup.svelte";
     import Tooltip from "$lib/Tooltip/Tooltip.svelte";
 
@@ -13,9 +14,11 @@
         <a href="/klanten-service" class="btn btn-small">Klantenservice</a>
     </div>
 
+    <!-- Producten -->
+
     <h2 class="text-primary">
         <Tooltip>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, aliquam saepe. Earum minus consequuntur excepturi quae beatae quod libero dolore autem ea voluptatum quo repudiandae vero ad, aperiam vel hic!</p>
+            <b>Zoeken en vinden. </b> Veel webshops tonen een banner met een actie of aanbieding. Voor de oudere online bezoeker kan dit te veel aandacht vragen, waardoor het hen afleidt van wat zij zoeken. Zorg ervoor dat er meerdere manieren zijn waarop de bezoeker je aanbod kan vinden. Bijvoorbeeld via een menu, een zoekvenster en gepresenteerd op de homepage. Het zoekvenster wordt veel gebruikt door oudere online bezoekers! Zet je aanbod gecategoriseerd op de homepage, met een afbeelding van het product mét tekst. Maak bij voorkeur gebruik van platte afbeeldingen met weinig toeters en bellen en afleidende kleuren. Let erop dat de aanklikvelden groot genoeg zijn en rondom witruimte hebben, zodat ze makkelijk aangeklikt kunnen worden. 
         </Tooltip>
         Kies een product
     </h2>
@@ -90,26 +93,164 @@
 
 </div>
 
-<div class="hero bg-primary">
+<div class="spacer"></div>
+
+<!-- Vertrouwen lijst -->
+
+<div class="hero-points hero bg-primary">
     <div class="hero-body container grid-xl">
         <div class="columns">
             <ul class="column col-4">
+                <Tooltip>
+                    <b>Service. </b> In een oogopslag de belangrijke servicepunten in beeld geeft zekerheid. Doe dit met beknopte bullets. Voor velen, maar zeker ook voor de oudere online bezoeker, vormt het retourneerproces een belemmering om te kopen. Zorg ervoor dat retourneren zo makkelijk mogelijk gaat, het liefst zonder printer. Als producten groot of zwaar zijn, kan een ophaalservice uitkomst bieden.
+                </Tooltip>
+                
                 <li>5 dagen in de week gratis thuisbezorgd (vanaf € 25,-)</li>
                 <li>Binnen 30 dagen gratis retour</li>
                 <li>Makkelijk retour te zenden</li>
                 <li>Klantenbeoordeling 9/10</li>
             </ul>
             <div class="column col-4">
-                veilig winkelen, vertrouwd betalen
+                <div class="image-columns  columns">
+                    <Tooltip>
+                        <b>Keurmerk.</b> Vertrouwen hebben in een webshop is voor een oudere online bezoeker heel belangrijk. Misschien is het daarom dat veel ouderen bij de grote bekende webshops kopen. Aangesloten zijn bij een keurmerk en dit zichtbaar maken, geeft vertrouwen. Wat ook vertrouwen geeft, is gebruik maken van de veel gebruikte betaalmethodes.
+                    </Tooltip>
+                    <div class="column"><img src="/veilig-winkelen.svg" alt="veilig winkelen met thuiswinkel en webshop keurmerk"></div>
+                    <div class="column"><img src="/vertrouwd-betalen.svg" alt="vertrouwd betalen met ideal en mastercard"></div>
+                </div>
             </div>
             <div class="column col-2">
+                <Tooltip>
+                    <b>Contact.</b> Wat ook vertrouwen geeft, is de mogelijkheid om een webshop te kunnen bellen. Of de adresgegevens te zien. Behalve bellen is een e-mail- of chatfunctie, zeker voor oudere bezoekers die slechter zijn gaan horen, een goed alternatief.
+                </Tooltip>
                 <p>Heb je vragen?</p>
-                <ul>
-                    <li>Bel ons</li>
-                    <li>Stuur ons een mail</li>
-                    <li>Gebruik de live chat</li>
+                <ul class="contact-options">
+                    <li><i class="ri-phone-line"></i> Bel ons</li>
+                    <li><i class="ri-mail-line"></i> Stuur ons een mail</li>
+                    <li><i class="ri-chat-3-line"></i> Gebruik de live chat</li>
                 </ul>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="spacer"></div>
+
+<!-- Samsung highlight -->
+
+<div class="hero-samsung hero">
+    <div class="columns">
+        <div class="column">
+            <img src="/images/wasmachines.png" alt="samsung wasmachine">
+        </div>
+        <div class="column">
+            <div class="h2">Samsung</div>
+            <div class="h3">Deze maand 20% korting op samsung drogers</div>
+        </div>
+        <div class="column">
+            <Tooltip>
+                <b>Reclame/Acties.</b> In ons onderzoek bleek er weinig aandacht te zijn voor actiebanners, meestal zorgden de banners juist voor afleiding of verwarring. Een enkele keer klikte men erop door maar dit waren meestal eenvoudige banners met een heldere boodschap. 
+            </Tooltip>
+            <a href="/wasmachines" class="btn">Meer over deze actie</a>
+        </div>
+    </div>
+</div>
+
+<div class="spacer"></div>
+
+<!-- Foto's -->
+
+<div class="container grid-xl">
+<div class="photo-columns columns">
+    <Tooltip>
+        <b>Aankleding.</b> Deze artikeltjes zijn puur ter aankleding en dienen geen doel. De oudere gebruikers in in ons onderzoek gingen hieraan voorbij.
+    </Tooltip>
+    <div class="column col-4">
+        <img src="/images/stock-photo-ipad.png" alt="" height="230px" class="img-fit-cover">
+        <h3>Overal via je tablet tv kijken</h3>
+        <p>Je kiest uit tablets met zowel wifi als wifi en 4G/5G. Met een tablet die 4G/5G ondersteunt, heb je ook toegang tot internet op plekken waar je geen veilige wifi verbinding hebt. Denk dan bijvoorbeeld aan de trein of het park. Je hebt hier wel een eSim of simkaart met mobiel internet voor nodig.</p>
+    </div>
+    <div class="column col-4">
+        <img src="/images/stock-photo-koffie.png" alt="">
+        <h3>Heerlijke koffie in mum van tijd</h3>
+        <p>Hoe vind je de machine die het beste bij je past? Daar helpen we je graag een handje bij. Zo zetten wij alle koffiezetapparaten voor jou op een rij en leggen we het verschil per machine uit. Heb je hierna nog geen keuze gemaakt? Kom dan naar een van onze winkels en test zelf een koffiemachine.</p>
+    </div>
+    <div class="column col-4">
+        <img src="/images/stock-photo-keuken.png" alt="">
+        <h3>Een keuken in elk huis</h3>
+        <p>Ga je verhuizen of krijg je een volledig nieuwe keuken? Dan heb je nieuwe keukenapparatuur nodig. Bepaal eerst of je de apparaten gaat inbouwen of dat je voor vrijstaande modellen kiest. Heb je inbouw apparatuur nodig? Let dan goed op de nismaten, zodat je zeker weet dat alles past.</p>
+    </div>
+</div>
+</div>
+
+<div class="spacer"></div>
+
+<!-- Zoekbalk -->
+
+<div class="hero" style="background: var(--highlight-color)">
+    <div class="container grid-lg">
+        <Tooltip>
+            <b>Zoeken.</b> De zoekfunctie wordt vaak gebruikt. Niet alleen voor het zoeken naar producten, waarbij de vraag soms heel gedetailleerd is, zoals ‘een kleine televisie met internet’, maar ook voor vragen over bezorging, service, betaling etc. Werkt je zoekmachine goed, geeft het suggesties en gaat het vriendelijk om met typefouten? Dan is de zoekfunctie een uitkomst voor veel oudere online bezoekers. 
+        </Tooltip>
+        <h2>Hoe kunnen we je helpen?</h2>
+        <div class="hero-search">
+            <input class="form-input" type="text" placeholder="Stel hier je vraag aan de klantenservice!">
+            <button class="btn input-group-btn">
+                <i class="ri-search-line"></i>
+                Zoeken
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="spacer"></div>
+
+<!-- Informatie -->
+
+<div class="container grid-xl" style="padding: 2rem 0">
+    <div class="columns">
+        <div class="column col-3">
+            <h4>Klantenservice</h4><br>
+            Retouren en annuleren <br>
+            Betalen<br>
+            Bezorgen<br>
+            Reparatie & installeren<br>
+            Bestellen<br>
+            Winkels<br>
+            Garantie<br>
+        </div>
+        <div class="column col-3">
+            <h4>Over Ons</h4><br>
+            Over Ons<br>
+            Assortiment<br>
+            Blog<br>
+            Nieuws<br>
+            Cadeaubonnen<br>
+            Werken bij <br>
+            Contact<br>
+            Privacy<br>
+        </div>
+        <div class="column col-3">
+            <h4>Onze winkel(s)</h4><br>
+            Winkel A<br>
+            Dorpstraat 2<br>
+            1234 AP De Stad<br><br>
+            Winkel B<br>
+            Winkelstraat 4<br>
+            5678 NA Rijnstad <br><br>
+            Winkel C<br>
+            Huizenweg 6<br>
+            9101 XT Wonsel<br>
+        </div>
+        <div class="column col-3">
+            <Tooltip>
+                <b>Winkel in beeld.</b> Als een webwinkel onbekend is, stelt het de oudere online bezoeker gerust als er een fysieke winkel is. Dan heeft men een plek om op terug te vallen. Het tonen van adresgegevens geeft al vertrouwen maar er waren deelnemers die online verder zochten, om te zien of er ook écht een winkel was. Dus heb je een fysieke winkel? Laat deze zien!
+            </Tooltip>
+            <h4>Hoofdkantoor</h4><br>
+            <img src="/images/stock-photo-kantoor.png" alt="een foto kan ons hoofdkantoor">
+            Hoofdkantoor <br>
+            Winkelstraat 4<br>
+            5678 NA Rijnstad<br>
         </div>
     </div>
 </div>
@@ -151,6 +292,55 @@
                     font-size: 1rem;
                 }
             }
+        }
+    }
+
+    .hero-points {
+        background-color: var(--secondary-color) !important;
+        color: var(--dark-color);
+
+        .image-columns {
+            img {
+                margin: 0;
+                width: 100%;
+                scale: 1.05;
+            }
+        }
+
+        .contact-options {
+            list-style: none;
+
+            i {
+                font-size: 1.1rem;
+                margin-right: .5rem;
+            }
+        }
+    }
+
+    .hero-samsung {
+        background: linear-gradient(40deg, var(--highlight-color) 0%, var(--highlight-color) 70%, var(--secondary-color) 70.1%) !important;
+
+        .columns {
+            justify-content: space-around;
+            align-items: center;
+        }
+        .column {
+            flex: unset;
+        }
+    }
+
+    .photo-columns {
+        img {
+            width: 100%;
+        }
+    }
+
+    .hero-search {
+        display: flex;
+        justify-content: stretch;
+        gap: .5rem;
+        input {
+            width: 100%;
         }
     }
 </style>

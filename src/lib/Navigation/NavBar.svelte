@@ -1,7 +1,17 @@
+<script>
+    import Tooltip from "$lib/Tooltip/Tooltip.svelte";
+import Logo from "./Logo.svelte";
+</script>
+
+
 <nav>
     <div>
-        <h1 class="title">ElektroWorld</h1>
+        <Logo />
     </div>
+
+    <Tooltip>
+        <b>In controle zijn.</b> Een gebruiker die niet vaak webshops bezoekt, en die ervaart dat er inééns iets op een pagina gebeurt, zonder dat hij/zij bewust iets doet, kan daarvan schrikken. Laat een dropdownmenu pas verschijnen als de gebruiker zélf op het menu klikt. En niet wanneer hij/zij er overheen hoovert.
+    </Tooltip>
 
     <div class="popover popover-bottom">
         <button class="btn btn-primary">
@@ -83,10 +93,6 @@
 
         padding: 1rem;
         gap: 1rem;
-
-        .title {
-            color: white;
-        }
 
         .search {
             flex-grow: 1;
