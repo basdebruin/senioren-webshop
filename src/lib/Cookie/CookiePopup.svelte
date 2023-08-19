@@ -35,9 +35,14 @@
 </article>
 
 <style>
+    .modal {
+        z-index: 1000;
+    }
+
     .modal-container {
         padding: 2rem;
         max-width: 1100px;
+        z-index: 1001;
     }
 
     .columns > * {
