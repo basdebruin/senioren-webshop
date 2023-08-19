@@ -38,6 +38,7 @@
         left: 0;
         width: 100%;
         z-index: 999;
+        background-color: white;
     }
     .hero {
         background-color: var(--accessibility-blue);
