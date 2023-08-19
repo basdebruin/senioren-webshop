@@ -1,8 +1,12 @@
+<script lang="ts">
+    export let isLeft : boolean = false;
+</script>
+
 <div class="tooltip-container">
     <span class="tooltip-icon">
         <img src="/tooltip_icon.svg" alt="tooltip">
 
-        <article class="tooltip-content">
+        <article class="tooltip-content" class:is-left={isLeft}>
             <slot></slot>
         </article>
     </span>
@@ -20,9 +24,9 @@
         position: absolute;
         top: -30px; left: -30px;
         width: 34px; height: 34px;
-        background: pink;
-        color: brown;
-        border: solid 2px brown;
+        background: white;
+        color: pink;
+        border: solid 3px pink;
         border-radius: 20px;
         box-shadow: 0px 5px 10px rgba(0,0,0,.1);
 
@@ -40,17 +44,21 @@
     .tooltip-content {
         visibility: hidden;
         position: absolute;
-        top: .5rem; left: .5rem;
+        top: 1.4rem; left: 0;
         width: 500px;
         background: pink;
-        border: solid 1px brown;
         padding: 1rem;
         line-height: 1.3;
         box-shadow: 0px 5px 10px rgba(0,0,0,.1);
         font-size: .7rem;
         color: var(--dark-color);
-    }
 
+        &.is-left {
+            left: unset;
+            right: 0;
+        }
+    }
+    
     .tooltip-icon:hover .tooltip-content {
         visibility: visible;
     }

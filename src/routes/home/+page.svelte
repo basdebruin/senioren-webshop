@@ -141,15 +141,15 @@
 <div class="hero-samsung hero">
     <div class="columns">
         <div class="column">
-            <img src="/images/wasmachines.png" alt="samsung wasmachine">
+            <img src="/images/wasmachine-samsung-ad.png" alt="samsung wasmachine">
         </div>
         <div class="column">
-            <div class="h2">Samsung</div>
-            <div class="h3">Deze maand 20% korting op samsung drogers</div>
+            <img src="/images/logo-samsung.png" alt="samsung" style="width: 150px; margin-left: -.2rem">
+            <div class="h3">Deze maand <b>20% korting</b> op samsung drogers</div>
         </div>
         <div class="column">
-            <Tooltip>
-                <b>Reclame/Acties.</b> In ons onderzoek bleek er weinig aandacht te zijn voor actiebanners, meestal zorgden de banners juist voor afleiding of verwarring. Een enkele keer klikte men erop door maar dit waren meestal eenvoudige banners met een heldere boodschap. 
+            <Tooltip isLeft={true}>
+                <b>Reclame/Acties.</b> In ons onderzoek bleek er weinig aandacht te zijn voor actiebanners, meestal zorgden de banners juist voor afleiding of verwarring. Een enkele keer klikte men erop door maar dit waren meestal eenvoudige banners met een heldere boodschap.
             </Tooltip>
             <a href="/wasmachines" class="btn">Meer over deze actie</a>
         </div>
@@ -207,7 +207,7 @@
 
 <!-- Informatie -->
 
-<div class="container grid-xl" style="padding: 2rem 0">
+<div class="container grid-xl" style="padding: 2rem 0 4rem 0">
     <div class="columns">
         <div class="column col-3">
             <h4>Klantenservice</h4><br>
@@ -243,7 +243,7 @@
             9101 XT Wonsel<br>
         </div>
         <div class="column col-3">
-            <Tooltip>
+            <Tooltip isLeft={true}>
                 <b>Winkel in beeld.</b> Als een webwinkel onbekend is, stelt het de oudere online bezoeker gerust als er een fysieke winkel is. Dan heeft men een plek om op terug te vallen. Het tonen van adresgegevens geeft al vertrouwen maar er waren deelnemers die online verder zochten, om te zien of er ook écht een winkel was. Dus heb je een fysieke winkel? Laat deze zien!
             </Tooltip>
             <h4>Hoofdkantoor</h4><br>
@@ -320,12 +320,21 @@
     .hero-samsung {
         background: linear-gradient(40deg, var(--highlight-color) 0%, var(--highlight-color) 70%, var(--secondary-color) 70.1%) !important;
 
+        max-height: 300px;
+        padding: 0;
+        margin: 4rem 0;
+
         .columns {
             justify-content: space-around;
             align-items: center;
         }
         .column {
             flex: unset;
+            margin-top: -3rem;
+        }
+
+        img {
+            width: 350px;
         }
     }
 
