@@ -45,11 +45,17 @@
         </div>
     </div>
 </div>
+<hr>
 
 
 <style>
     .product {
         position: relative;
+        margin: 2rem 0;
+    }
+
+    h3 {
+        margin-bottom: 1rem;
     }
 
     .onze-keuze {
@@ -64,5 +70,9 @@
 
     .btn {
         margin: .3rem 0;
+    }
+
+    hr {
+        border: solid 1px var(--highlight-color);
     }
 </style>

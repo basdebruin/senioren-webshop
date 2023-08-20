@@ -5,13 +5,13 @@
 <footer>
     <!-- Zoekbalk -->
 
-    <div class="hero" style="background: var(--highlight-color)">
+    <div class="hero hero-search" style="background: var(--highlight-color)">
         <div class="container grid-lg">
             <Tooltip>
                 <b>Zoeken.</b> De zoekfunctie wordt vaak gebruikt. Niet alleen voor het zoeken naar producten, waarbij de vraag soms heel gedetailleerd is, zoals een kleine televisie met internet, maar ook voor vragen over bezorging, service, betaling etc. Werkt je zoekmachine goed, geeft het suggesties en gaat het vriendelijk om met typefouten? Dan is de zoekfunctie een uitkomst voor veel oudere online bezoekers.
             </Tooltip>
             <h2>Hoe kunnen we je helpen?</h2>
-            <div class="hero-search">
+            <div class="search-bar">
                 <input class="form-input" type="text" placeholder="Stel hier je vraag aan de klantenservice!">
                 <button class="btn input-group-btn">
                     <i class="ri-search-line"></i>
@@ -19,6 +19,7 @@
                 </button>
             </div>
         </div>
+        <img class="logo" src="/logo-spark.svg" alt="" aria-hidden>
     </div>
 
     <div class="spacer"></div>
@@ -115,6 +116,19 @@
     }
 
     .hero-search {
+        position: relative;
+
+        .logo {
+            position: absolute;
+            top: -3rem;
+            right: 5%;
+            height: 150%;
+            opacity: .2;
+            pointer-events: none;
+        }
+    }
+
+    .search-bar {
         display: flex;
         justify-content: stretch;
         gap: .5rem;
