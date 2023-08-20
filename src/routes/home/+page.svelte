@@ -11,7 +11,7 @@
 
     <div class="top-buttons">
         <a href="#winkels" class="btn btn-small">Onze winkels</a>
-        <a href="/klanten-service" class="btn btn-small">Klantenservice</a>
+        <a href="/klantenservice" class="btn btn-small">Klantenservice</a>
     </div>
 
     <!-- Producten -->
