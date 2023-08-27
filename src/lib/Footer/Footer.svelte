@@ -118,6 +118,10 @@
     .hero-search {
         position: relative;
 
+        h2 {
+            color: black;
+        }
+
         .logo {
             position: absolute;
             top: -3rem;

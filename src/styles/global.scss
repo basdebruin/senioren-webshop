@@ -63,3 +63,28 @@ $accessibility-blue: #2653E8;
 h1, h2, h3, h4, h5 {
     color: var(--primary-color);
 }
+
+
+// -- Input
+
+// Checkbox
+.checkbox {
+    display: flex;
+    gap: 1rem;
+
+    input[type=checkbox] {
+        appearance: none;
+        cursor: pointer;
+        &::after {
+            display: block;
+            content: "";
+            width: 28px;
+            height: 28px;
+            border: solid 2px var(--primary-color);
+            border-radius: 100%;
+        }
+        &:checked::after {
+            content: url("/check-fill.svg");
+        }
+    }
+}
