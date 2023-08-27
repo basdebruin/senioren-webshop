@@ -34,7 +34,12 @@
             <p>Geluidsniveau</p>
             <p><b>{geluidsniveau}</b></p>
             <p>Energielabel</p>
-            <p><b>{energielabel}</b></p>
+            <p>
+                <span class="energielabel">
+                    <img src="/energie-label.png" alt="">
+                    <span>{energielabel}</span>
+                </span>
+            </p>
         </div>
         <div class="column">
             <h5>€{prijs},-</h5>
@@ -50,7 +55,7 @@
 <hr>
 
 
-<style>
+<style lang="scss">
     .product {
         position: relative;
         margin: 2rem 0;
@@ -76,5 +81,22 @@
 
     hr {
         border: solid 1px var(--highlight-color);
+    }
+
+    .energielabel {
+        position: relative;
+
+        img {
+            width: 60px;
+        }
+
+        span {
+            position: absolute;
+            top: -1rem;
+            left: 1.1rem;
+
+            color: white;
+            font-size: 1.2rem;
+        }
     }
 </style>

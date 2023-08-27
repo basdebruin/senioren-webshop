@@ -1,5 +1,6 @@
 <script>
     import Tooltip from "$lib/Tooltip/Tooltip.svelte";
+    import { shoppingCartFull } from "$lib/stores";
     import ImageGallery from "./ImageGallery.svelte";
     import Specs from "./Specs.svelte";
 </script>
@@ -69,7 +70,7 @@
             </Tooltip>
             <div class="desc-buttons">
                 <a href="/products/wasmachines" class="btn">Terug naar overzicht</a>
-                <a href="/products/wasmachines" class="btn btn-primary">Bestellen</a>
+                <a href="/shopping-cart" class="btn btn-primary" on:click={() => {shoppingCartFull.set(true)}}>Bestellen</a>
             </div>
         </div>
     </div>

@@ -1,6 +1,7 @@
 <script>
     import Tooltip from "$lib/Tooltip/Tooltip.svelte";
-import Logo from "./Logo.svelte";
+    import Logo from "./Logo.svelte";
+    import { shoppingCartFull } from "$lib/stores";
 </script>
 
 
@@ -72,6 +73,9 @@ import Logo from "./Logo.svelte";
         <a class="btn btn-primary" href="/shopping-cart">
             <i class="ri-shopping-basket-2-line"></i>
             Winkelmandje
+            {#if $shoppingCartFull}
+                <div class="shopping-cart-indicator">1</div>
+            {/if}
         </a>
     </section>
 </nav>
@@ -96,6 +100,18 @@ import Logo from "./Logo.svelte";
 
         .search {
             flex-grow: 1;
+        }
+
+        .shopping-cart-indicator {
+            position: absolute;
+            top: 0px; right: 5px;
+            width: 30px;
+            height: 30px;
+            padding: .1rem;
+            border-radius: 100%;
+            background-color: white;
+            border: solid 1px var(--primary-color);
+            color: var(--primary-color);
         }
     }
 </style>
