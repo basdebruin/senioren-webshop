@@ -1,6 +1,7 @@
 <script>
     import Tooltip from "$lib/Tooltip/Tooltip.svelte";
     import ImageGallery from "./ImageGallery.svelte";
+    import Specs from "./Specs.svelte";
 </script>
 
 <div class="spacer"></div>
@@ -78,7 +79,28 @@
         <p>30 dagen bedenktijd en gratis retourneren</p>
         <p>Oude machine wordt meegenomen</p>
     </div>
+
+    <!-- Specs -->
+    <Specs/>
+
 </div>
+
+
+<div class="spacer"></div>
+
+
+
+<div class="container grid-lg">
+    <!-- Reviews -->
+    <Tooltip>
+        <b>Recensies.</b> De mening van andere kopers doet ertoe (al zijn er ouderen die recensies juist wantrouwen, want 'die schrijven ze vast zelf'). Regelmatig werd er ook nog op externe reviewsites gekeken. Plaats bovenin de plus- en minpunten en daarna het de recensie opdat men sneller de belangrijke info tot zich kan nemen.
+    </Tooltip>
+    <h3>Referenties</h3>
+    <img src="/recenties-samsung.svg" alt="een paneel met recenties, een samenvatting van alle beoordelingen is zichtbaar aan de linkerkant. Aan de rechterkant zijn twee recenties zichtbaar met sterren, positieve en negatieve punten, een korte tekst en de naam van degene die de recentie heef achtergelaten">
+
+</div>
+
+<div class="spacer"></div>
 
 <style lang="scss">
     .price {
