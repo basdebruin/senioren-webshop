@@ -1,7 +1,8 @@
 <script>
     import Tooltip from "$lib/Tooltip/Tooltip.svelte";
-
+    import ImageGallery from "./ImageGallery.svelte";
 </script>
+
 <div class="spacer"></div>
 
 <div class="container grid-xl" style="margin: 2rem auto">
@@ -33,41 +34,37 @@
 
     <div class="columns">
         <!-- Image Gallery -->
-        <div class="column col-5">
-            <img src="/images/wasmachines.png" alt="">
-        </div>
-        <div class="column col-5">
-            <!-- Description -->
-            <h3>
-                Omschrijving
-                <Tooltip offsetLeft={200}>
-                    <b>Weinig inspanning.</b> De oudere bezoeker leest meestal goed, is doorgaans geen scannende lezer. Daarom is een overzichtelijke, niet al te langer tekst, prettig. Gebruik daarbij duidelijke en ruim opgezette bulletpoints, want dit helpt de bezoeker om, zonder veel inspanning, een beeld te krijgen van een product. Gaat het over een gebruiksartikel? Zeg dan iets over het gewicht, de grootte of de bedienbaarheid, eventueel ondersteund met foto's. Geef uitleg bij technische termen of Engelstalige woorden.
-                </Tooltip>
-            </h3>
-            <ul>
-                <li>Doseert altijd de juiste hoeveelheid wasmiddel en wasverzachter dankzij Autodose (<a href="#uitleg">Uitleg</a>).</li>
-                <li>De wasmachine heeft met 8 kilogram vulgewicht een ruime trommel.</li>
-                <li>Je wast hiermee zeer grote ladingen was in één keer.</li>
-                <li>Om beddengoed, ondergoed of handdoeken grondig schoon te wassen, gebruik je het hygiënisch stoomprogramma.</li>
-                <li>Met SmartThings koppel je de wasmachine aan je smartphone of tablet</li>
-                <li>De bediening is heel eenvoudig.</li>
-            </ul>
-            <div class="price">
-                € 699,-
-            </div>
-            <ul>
-                <li>2 jaar garantie</li>
-                <li>gratis thuisbezorgd en aangesloten</li>
-                <li>gratis retourneren binnen 30 dagen.</li>
-            </ul>
-
-            <Tooltip offsetLeft={-20} offsetTop={35}>
-                <b>Navigeren.</b> Zorg ervoor de gebruiker makkelijk heen en terug kan, zonder uit de bestelflow te geraken. Gebruik knoppen van minimaal 25x25 pixels formaat, let altijd op zaken als contrast en helder taalgebruik. Een knop in het bestelproces met de naam 'verzenden' in plaats van bijvoorbeeld 'verder met bestellen' leidde ertoe dat een van de deelnemers zo verward was dat zij van de aankoop afzag: 'Hoe kan het nu verzonden worden zonder dat ik mijn adres heb opgegeven?'
+        <ImageGallery images={["/images/wasmachines.png", "/images/wasdrogers.png", "/images/vaatwassers.png"]}/>
+        <!-- Description -->
+        <h3>
+            Omschrijving
+            <Tooltip offsetLeft={200}>
+                <b>Weinig inspanning.</b> De oudere bezoeker leest meestal goed, is doorgaans geen scannende lezer. Daarom is een overzichtelijke, niet al te langer tekst, prettig. Gebruik daarbij duidelijke en ruim opgezette bulletpoints, want dit helpt de bezoeker om, zonder veel inspanning, een beeld te krijgen van een product. Gaat het over een gebruiksartikel? Zeg dan iets over het gewicht, de grootte of de bedienbaarheid, eventueel ondersteund met foto's. Geef uitleg bij technische termen of Engelstalige woorden.
             </Tooltip>
-            <div class="desc-buttons">
-                <a href="/products/wasmachines" class="btn">Terug naar overzicht</a>
-                <a href="/products/wasmachines" class="btn btn-primary">Bestellen</a>
-            </div>
+        </h3>
+        <ul>
+            <li>Doseert altijd de juiste hoeveelheid wasmiddel en wasverzachter dankzij Autodose (<a href="#uitleg">Uitleg</a>).</li>
+            <li>De wasmachine heeft met 8 kilogram vulgewicht een ruime trommel.</li>
+            <li>Je wast hiermee zeer grote ladingen was in één keer.</li>
+            <li>Om beddengoed, ondergoed of handdoeken grondig schoon te wassen, gebruik je het hygiënisch stoomprogramma.</li>
+            <li>Met SmartThings koppel je de wasmachine aan je smartphone of tablet</li>
+            <li>De bediening is heel eenvoudig.</li>
+        </ul>
+        <div class="price">
+            € 699,-
+        </div>
+        <ul>
+            <li>2 jaar garantie</li>
+            <li>gratis thuisbezorgd en aangesloten</li>
+            <li>gratis retourneren binnen 30 dagen.</li>
+        </ul>
+
+        <Tooltip offsetLeft={-20} offsetTop={35}>
+            <b>Navigeren.</b> Zorg ervoor de gebruiker makkelijk heen en terug kan, zonder uit de bestelflow te geraken. Gebruik knoppen van minimaal 25x25 pixels formaat, let altijd op zaken als contrast en helder taalgebruik. Een knop in het bestelproces met de naam 'verzenden' in plaats van bijvoorbeeld 'verder met bestellen' leidde ertoe dat een van de deelnemers zo verward was dat zij van de aankoop afzag: 'Hoe kan het nu verzonden worden zonder dat ik mijn adres heb opgegeven?'
+        </Tooltip>
+        <div class="desc-buttons">
+            <a href="/products/wasmachines" class="btn">Terug naar overzicht</a>
+            <a href="/products/wasmachines" class="btn btn-primary">Bestellen</a>
         </div>
     </div>
 
