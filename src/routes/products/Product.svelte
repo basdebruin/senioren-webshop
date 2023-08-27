@@ -13,10 +13,12 @@
     <h3>{title}</h3>
     <div class="columns">
         <div class="column">
-            <img src={img} alt={title}>
-            {#if onzeKeuze}
-                <div class="onze-keuze">Onze keuze</div>
-            {/if}
+            <a href="/products/wasmachines/samsung">
+                <img src={img} alt={title}>
+                {#if onzeKeuze}
+                    <div class="onze-keuze">Onze keuze</div>
+                {/if}
+            </a>
         </div>
         <div class="column">
             <p>Vulgewicht</p>
@@ -36,8 +38,8 @@
         </div>
         <div class="column">
             <h5>€{prijs},-</h5>
-            <a href="/productwasmachine" class="btn">Meer informatie</a>
-            <a href="/productwasmachine" class="btn btn-primary">
+            <a href="/products/wasmachines/samsung" class="btn">Meer informatie</a>
+            <a href="/products/wasmachines/samsung" class="btn btn-primary">
                 <i class="ri-shopping-basket-2-fill"></i>
                 Bestel nu
             </a>

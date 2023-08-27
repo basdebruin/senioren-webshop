@@ -1,8 +1,10 @@
 <script lang="ts">
     export let isLeft : boolean = false;
+    export let offsetLeft = 0;
+    export let offsetTop = 0;
 </script>
 
-<div class="tooltip-container">
+<div class="tooltip-container" style="--offset-left: {offsetLeft}px; --offset-top: {offsetTop}px">
     <span class="tooltip-icon">
         <img src="/tooltip_icon.svg" alt="tooltip">
 
@@ -18,11 +20,16 @@
         width: 0px; height: 0px;
         overflow: visible;
         z-index: 800;
+
+        &:hover {
+            z-index: 850;
+        }
     }
 
     .tooltip-icon {
         position: absolute;
-        top: -30px; left: -30px;
+        top: calc(-30px + var(--offset-top)); 
+        left: calc(-30px + var(--offset-left));
         width: 34px; height: 34px;
         background: white;
         color: pink;

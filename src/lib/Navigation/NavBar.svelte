@@ -21,30 +21,30 @@ import Logo from "./Logo.svelte";
         <div class="popover-container">
             <ul class="menu">
                 <li class="menu-item">
-                    <a href="/producten/wasmachines">Wasmachines</a>
+                    <a href="/products/wasmachines">Wasmachines</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/producten/wasdrogers">Wasdrogers</a>
+                    <a href="/products/wasdrogers">Wasdrogers</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/producten/koelkasten">Koelkasten</a>
+                    <a href="/products/koelkasten">Koelkasten</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/producten/vriezers">Vriezers</a>
+                    <a href="/products/vriezers">Vriezers</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/producten/vaatwassers">Vaatwassers</a>
+                    <a href="/products/vaatwassers">Vaatwassers</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/producten/smartphones">Smartphones</a>
+                    <a href="/products/smartphones">Smartphones</a>
                 <li class="menu-item">
-                    <a href="/producten/tablets">Tablets</a>
+                    <a href="/products/tablets">Tablets</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/producten/monitors">Monitors</a>
+                    <a href="/products/monitors">Monitors</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/producten/laptops">Laptops</a>
+                    <a href="/products/laptops">Laptops</a>
                 </li>
                 <li class="menu-item">
                     <a href="/waterkokers">Waterkokers</a>

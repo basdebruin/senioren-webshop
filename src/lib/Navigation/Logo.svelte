@@ -1,4 +1,4 @@
-<a href="/" aria-label="Elektroworld - Ga naar home" id="logo">
+<a href="/home" aria-label="Elektroworld - Ga naar home" id="logo">
     <span class="text">
         Elektroworld
     </span>
