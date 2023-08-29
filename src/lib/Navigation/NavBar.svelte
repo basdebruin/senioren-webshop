@@ -2,6 +2,8 @@
     import Tooltip from "$lib/Tooltip/Tooltip.svelte";
     import Logo from "./Logo.svelte";
     import { shoppingCartFull } from "$lib/stores";
+
+    let dropdownOpen = false;
 </script>
 
 
@@ -14,12 +16,12 @@
         <b>In controle zijn.</b> Een gebruiker die niet vaak webshops bezoekt, en die ervaart dat er inééns iets op een pagina gebeurt, zonder dat hij/zij bewust iets doet, kan daarvan schrikken. Laat een dropdownmenu pas verschijnen als de gebruiker zélf op het menu klikt. En niet wanneer hij/zij er overheen hoovert.
     </Tooltip>
 
-    <div class="popover popover-bottom">
-        <button class="btn btn-primary">
+    <div class="popout popout-bottom" class:active={dropdownOpen}>
+        <button class="btn btn-primary" on:click={() => dropdownOpen=!dropdownOpen}>
             Alle producten
             <i class="ri-arrow-down-s-line"></i>
         </button>
-        <div class="popover-container">
+        <div class="popout-container">
             <ul class="menu">
                 <li class="menu-item">
                     <a href="/products/wasmachines">Wasmachines</a>
@@ -112,6 +114,47 @@
             background-color: white;
             border: solid 1px var(--primary-color);
             color: var(--primary-color);
+        }
+
+        // custom popout that clicks
+        .popout {
+            display: inline-block;
+            position: relative;
+
+            .popout-container {
+                display: block;
+                left: 50%;
+                opacity: 0;
+                padding: .5rem;
+                position: absolute;
+                top: 0;
+                transform: translate(-50%, -50%) scale(0);
+                transition: transform .2s;
+                width: 350px;
+                z-index: 300;
+            }
+
+            &.active .popout-container {
+                display: block;
+                opacity: 1;
+                transform: translate(-50%, 10%) scale(1);
+            }
+
+            &.popout-bottom {
+                .popout-container {
+                    left: 50%;
+                    top: 0;
+                }
+
+                &.active.popout-container {
+                    transform: translate(-50%, 100%) scale(1);
+                }
+            }
+
+            .card {
+                box-shadow: 0px 5px 10px rgba(0,0,0,.1);
+                border: 0;
+            }
         }
     }
 </style>
