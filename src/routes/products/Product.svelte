@@ -1,4 +1,6 @@
 <script lang="ts">
+    import { shoppingCartFull } from "$lib/stores";
+
     export let title = "Product title";
     export let img = "";
     export let vulgewicht = "";
@@ -44,7 +46,7 @@
         <div class="column">
             <h5>€{prijs},-</h5>
             <a href="/products/wasmachines/samsung" class="btn">Meer informatie</a>
-            <a href="/products/wasmachines/samsung" class="btn btn-primary">
+            <a href="/shopping-cart" class="btn btn-primary" on:click={() => shoppingCartFull.set(true)}>
                 <i class="ri-shopping-basket-2-fill"></i>
                 Bestel nu
             </a>

@@ -10,7 +10,7 @@
 <div class="container grid-xl">
 
     <div class="top-buttons">
-        <a href="#winkels" class="btn btn-small">Onze winkels</a>
+        <a href="#onze-winkels" class="btn btn-small">Onze winkels</a>
         <a href="/klantenservice" class="btn btn-small">Klantenservice</a>
     </div>
 
@@ -32,25 +32,25 @@
             </a>
         </li>
         <li class="column">
-            <a href="products/wasdrogers" class="btn">
+            <a href="products/wasmachines" class="btn">
                 <img src="/images/wasdrogers.png" alt="">
                 <h3>wasdrogers</h3>
             </a>
         </li>
         <li class="column">
-            <a href="products/koelkasten" class="btn">
+            <a href="products/wasmachines" class="btn">
                 <img src="/images/koelkasten.png" alt="">
                 <h3>koelkasten</h3>
             </a>
         </li>
         <li class="column">
-            <a href="products/vriezers" class="btn">
+            <a href="products/wasmachines" class="btn">
                 <img src="/images/vriezers.png" alt="">
                 <h3>vriezers</h3>
             </a>
         </li>
         <li class="column">
-            <a href="products/vaatwassers" class="btn">
+            <a href="products/wasmachines" class="btn">
                 <img src="/images/vaatwassers.png" alt="">
                 <h3>vaatwassers</h3>
             </a>
@@ -59,31 +59,31 @@
 
     <ul class="columns products">
         <li class="column">
-            <a href="products/smartphones" class="btn">
+            <a href="products/wasmachines" class="btn">
                 <img src="/images/smartphones.png" alt="">
                 <h3>smartphones</h3>
             </a>
         </li>
         <li class="column">
-            <a href="products/tablets" class="btn">
+            <a href="products/wasmachines" class="btn">
                 <img src="/images/tablets.png" alt="">
                 <h3>tablets</h3>
             </a>
         </li>
         <li class="column">
-            <a href="products/monitors" class="btn">
+            <a href="products/wasmachines" class="btn">
                 <img src="/images/monitors.png" alt="">
                 <h3>monitors</h3>
             </a>
         </li>
         <li class="column">
-            <a href="products/laptops" class="btn">
+            <a href="products/wasmachines" class="btn">
                 <img src="/images/laptops.png" alt="">
                 <h3>laptops</h3>
             </a>
         </li>
         <li class="column">
-            <a href="products/waterkokers" class="btn">
+            <a href="products/wasmachines" class="btn">
                 <img src="/images/waterkokers.png" alt="">
                 <h3>waterkokers</h3>
             </a>

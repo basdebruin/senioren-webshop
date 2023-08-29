@@ -13,10 +13,10 @@
             <h2>Hoe kunnen we je helpen?</h2>
             <div class="search-bar">
                 <input class="form-input" type="text" placeholder="Stel hier je vraag aan de klantenservice!">
-                <button class="btn input-group-btn">
+                <a href="klantenservice" class="btn input-group-btn">
                     <i class="ri-search-line"></i>
                     Zoeken
-                </button>
+                </a>
             </div>
         </div>
         <img class="logo" src="/logo-spark.svg" alt="" aria-hidden>
@@ -50,7 +50,7 @@
                 Privacy<br>
             </div>
             <div class="column col-3">
-                <h4>Onze winkel(s)</h4><br>
+                <h4 id="onze-winkels">Onze winkel(s)</h4><br>
                 Winkel A<br>
                 Dorpstraat 2<br>
                 1234 AP De Stad<br><br>

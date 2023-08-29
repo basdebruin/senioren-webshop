@@ -3,8 +3,8 @@
 <div class="hero">
 
     <img src="/images/logo-accessibility.png" alt="Stichting Accessibility">
-    <h1>Voorbeeldontwerp Webwinkel</h1>
-    <h2>voor senioren</h2>
+    <h1 style="color: white">Voorbeeldontwerp Webwinkel</h1>
+    <h2 style="color: white">voor senioren</h2>
 
 </div>
 

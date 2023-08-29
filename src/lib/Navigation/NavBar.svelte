@@ -25,30 +25,30 @@
                     <a href="/products/wasmachines">Wasmachines</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/products/wasdrogers">Wasdrogers</a>
+                    <a href="/products/wasmachines">Wasdrogers</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/products/koelkasten">Koelkasten</a>
+                    <a href="/products/wasmachines">Koelkasten</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/products/vriezers">Vriezers</a>
+                    <a href="/products/wasmachines">Vriezers</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/products/vaatwassers">Vaatwassers</a>
+                    <a href="/products/wasmachines">Vaatwassers</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/products/smartphones">Smartphones</a>
+                    <a href="/products/wasmachines">Smartphones</a>
                 <li class="menu-item">
-                    <a href="/products/tablets">Tablets</a>
+                    <a href="/products/wasmachines">Tablets</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/products/monitors">Monitors</a>
+                    <a href="/products/wasmachines">Monitors</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/products/laptops">Laptops</a>
+                    <a href="/products/wasmachines">Laptops</a>
                 </li>
                 <li class="menu-item">
-                    <a href="/waterkokers">Waterkokers</a>
+                    <a href="/products/wasmachines">Waterkokers</a>
                 </li>
             </ul>
         </div>
