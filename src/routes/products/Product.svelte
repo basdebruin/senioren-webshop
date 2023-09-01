@@ -16,7 +16,7 @@
     <div class="columns">
         <div class="column">
             <a href="/products/wasmachines/samsung">
-                <img src={img} alt={title}>
+                <img src={img} alt={title} class="product-image">
                 {#if onzeKeuze}
                     <div class="onze-keuze">Onze keuze</div>
                 {/if}
@@ -61,6 +61,12 @@
     .product {
         position: relative;
         margin: 2rem 0;
+    }
+
+    .product-image {
+        width: 100%;
+        height: 220px;
+        object-fit: contain;
     }
 
     h3 {

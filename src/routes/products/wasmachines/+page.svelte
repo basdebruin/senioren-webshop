@@ -51,7 +51,7 @@ import Product from "../Product.svelte";
             </Tooltip>
             <Product 
                 title="Samsung superzuinig met automatisch wasmiddeldosering" 
-                img="/images/wasmachines.png"
+                img="/images/wasmachine-1.png"
                 vulgewicht="8 kg"
                 toerental="1400"
                 geluidsniveau="stil (71dB)"
@@ -61,7 +61,7 @@ import Product from "../Product.svelte";
             />
             <Product 
                 title="Bosch voor lage energiekosten, stil en snel" 
-                img="/images/wasmachines.png"
+                img="/images/wasmachine-2.png"
                 vulgewicht="9 kg"
                 toerental="1400"
                 geluidsniveau="stil (71dB)"
@@ -70,7 +70,7 @@ import Product from "../Product.svelte";
             />
             <Product 
                 title="Samsung zuinig, stil met stoomfunctie" 
-                img="/images/wasmachines.png"
+                img="/images/wasmachine-3.png"
                 vulgewicht="7 kg"
                 toerental="1500"
                 geluidsniveau="stil (72dB)"
@@ -79,7 +79,7 @@ import Product from "../Product.svelte";
             />
             <Product 
                 title="Haier heel stil, snel met WIFI" 
-                img="/images/wasmachines.png"
+                img="/images/wasmachine-4.png"
                 vulgewicht="8 kg"
                 toerental="1500"
                 geluidsniveau="Heel stil (69dB)"
@@ -88,7 +88,7 @@ import Product from "../Product.svelte";
             />
             <Product 
                 title="Samsung, stil en wasgoed toevoegen tijdens wasbeurt" 
-                img="/images/wasmachines.png"
+                img="/images/wasmachine-5.png"
                 vulgewicht="8 kg"
                 toerental="1500"
                 geluidsniveau="stil (72dB)"
@@ -97,7 +97,7 @@ import Product from "../Product.svelte";
             />
             <Product 
                 title="AEG, stil met stoomfunctie" 
-                img="/images/wasmachines.png"
+                img="/images/wasmachine-6.png"
                 vulgewicht="8 kg"
                 toerental="1600"
                 geluidsniveau="stil (76dB)"
@@ -106,7 +106,7 @@ import Product from "../Product.svelte";
             />
             <Product 
                 title="AEG voor gemiddelde energiekosten, stil en snel" 
-                img="/images/wasmachines.png"
+                img="/images/wasmachine-7.png"
                 vulgewicht="9 kg"
                 toerental="1500"
                 geluidsniveau="stil (76dB)"
@@ -115,7 +115,7 @@ import Product from "../Product.svelte";
             />
             <Product 
                 title="Miele zuinig, stil met strijkfunctie" 
-                img="/images/wasmachines.png"
+                img="/images/wasmachine-8.png"
                 vulgewicht="8 kg"
                 toerental="1500"
                 geluidsniveau="stil (72dB)"
@@ -124,7 +124,7 @@ import Product from "../Product.svelte";
             />
             <Product 
                 title="Miele waterbesparend, zuinig met WIFI" 
-                img="/images/wasmachines.png"
+                img="/images/wasmachine-9.png"
                 vulgewicht="8 kg"
                 toerental="1500"
                 geluidsniveau="Heel stil (69dB)"
@@ -136,13 +136,13 @@ import Product from "../Product.svelte";
 
     <!-- Pagination -->
     <ul class="pagination">
-        <li class="btn" style="padding-left: .1rem; margin-right: .5rem"><i class="ri-arrow-left-s-line"></i>Vorige</li>
+        <li class="btn" style="margin-right: .5rem"><i class="ri-arrow-left-s-line"></i>Vorige</li>
         <li class="btn btn-primary">1</li>
         <li class="btn btn-hover">2</li>
         <li class="btn btn-hover">3</li>
         <li class="btn btn-hover">4</li>
         <li class="btn btn-hover">5</li>
-        <li class="btn" style="padding-right: .1rem; margin-left: .5rem">Volgende<i class="ri-arrow-right-s-line"></i></li>
+        <li class="btn" style="margin-left: .5rem">Volgende<i class="ri-arrow-right-s-line"></i></li>
     </ul>
 
 </div>
@@ -163,11 +163,13 @@ import Product from "../Product.svelte";
         display: flex;
         align-items: center;
 
-        * {
+        > * {
             height: 1.5rem;
             padding: .1rem .5rem;
             cursor: pointer;
         }
+
+
 
         .btn-hover {
             background: none;
