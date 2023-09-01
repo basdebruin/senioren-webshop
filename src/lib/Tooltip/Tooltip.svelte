@@ -52,7 +52,7 @@
         visibility: hidden;
         position: absolute;
         top: 1.4rem; left: 0;
-        width: 500px;
+        width: 400px;
         background: pink;
         padding: 1rem;
         line-height: 1.3;

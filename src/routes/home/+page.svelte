@@ -120,10 +120,10 @@
                 </div>
             </div>
             <div class="column col-2">
-                <Tooltip>
+                <Tooltip isLeft={true}>
                     <b>Contact.</b> Wat ook vertrouwen geeft, is de mogelijkheid om een webshop te kunnen bellen. Of de adresgegevens te zien. Behalve bellen is een e-mail- of chatfunctie, zeker voor oudere bezoekers die slechter zijn gaan horen, een goed alternatief.
                 </Tooltip>
-                <p>Heb je vragen?</p>
+                <p><b>Heb je vragen?</b></p>
                 <ul class="contact-options">
                     <li><i class="ri-phone-line"></i> Bel ons</li>
                     <li><i class="ri-mail-line"></i> Stuur ons een mail</li>
@@ -233,6 +233,20 @@
     .hero-points {
         background-color: var(--secondary-color) !important;
         color: var(--dark-color);
+
+        padding: 2rem;
+        padding-top: 3rem;
+
+        .hero-body > .columns {
+            align-items: flex-start;
+            justify-content: center;
+
+            gap: 2rem;
+
+            * {
+                margin: 0;
+            }
+        }
 
         .image-columns {
             img {

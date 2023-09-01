@@ -67,6 +67,7 @@
                 </Tooltip>
                 <h4>Hoofdkantoor</h4><br>
                 <img src="/images/stock-photo-kantoor.png" alt="een foto kan ons hoofdkantoor">
+                <br><br>
                 Hoofdkantoor <br>
                 Winkelstraat 4<br>
                 5678 NA Rijnstad<br>
