@@ -70,6 +70,14 @@ a:visited, button:visited {
     color: $dark-color;
 }
 
+.form-input {
+    border: solid 1px $primary-color;
+
+    &:disabled {
+        background-color: rgba(4, 107, 153, .22);
+    }
+}
+
 // -- Container
 
 .spacer {
@@ -93,9 +101,10 @@ h1, h2, h3, h4, h5 {
     display: flex;
     gap: 1rem;
 
-    input[type=checkbox] {
+    cursor: pointer;
+
+    input {
         appearance: none;
-        cursor: pointer;
         &::after {
             display: block;
             content: "";
