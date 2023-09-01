@@ -151,7 +151,7 @@
             <Tooltip isLeft={true}>
                 <b>Reclame/Acties.</b> In ons onderzoek bleek er weinig aandacht te zijn voor actiebanners, meestal zorgden de banners juist voor afleiding of verwarring. Een enkele keer klikte men erop door maar dit waren meestal eenvoudige banners met een heldere boodschap.
             </Tooltip>
-            <a href="/wasmachines" class="btn">Meer over deze actie</a>
+            <a href="#advertentie" class="btn">Meer over deze actie</a>
         </div>
     </div>
 </div>
@@ -205,7 +205,7 @@
                 border: var(--highlight-color) 1px solid;
                 flex-direction: column;
                 align-items: center;
-                justify-content: space-evenly;
+                justify-content: space-between;
                 gap: .5rem;
                 height: 300px;
 
@@ -213,11 +213,14 @@
 
                 text-transform: capitalize;
 
+                &:hover {
+                    border: solid 2px var(--dark-color);
+                }
+
                 img {
                     width: 100%;
                     max-height: 200px;
                     object-fit: contain;
-                    mix-blend-mode: multiply;
                 }
 
                 h3 {
@@ -259,6 +262,9 @@
         .columns {
             justify-content: space-around;
             align-items: center;
+            width: 100%;
+            max-width: 1500px;
+            margin: 0 auto;
         }
         .column {
             flex: unset;

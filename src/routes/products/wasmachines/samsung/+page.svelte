@@ -37,7 +37,7 @@
     <div class="columns">
         <!-- Image Gallery -->
         <div class="column col-5">
-            <ImageGallery images={["/images/wasmachines.png", "/images/wasdrogers.png", "/images/vaatwassers.png"]}/>
+            <ImageGallery images={["/images/wasmachine-hires.png", "/images/wasmachine-hires-2.png", "/images/wasmachine-hires-3.png", "/images/wasmachine-hires-4.png"]}/>
         </div>
         <!-- Description -->
         <div class="column col-6">

@@ -51,13 +51,14 @@
             justify-content: center;
 
             .thumbnail {
-                width: 6rem;
-                height: 6rem;
+                width: 4rem;
+                height: 4rem;
+                padding: 0;
 
                 img {
                     width: 100%;
                     height: 100%;
-                    object-fit: contain;
+                    object-fit: cover;
                 }
             }
         }

@@ -1,85 +1,92 @@
 <script>
+    // @ts-nocheck
+
     import Tooltip from "$lib/Tooltip/Tooltip.svelte";
     import Logo from "./Logo.svelte";
     import { shoppingCartFull } from "$lib/stores";
+    import { clickOutside } from "$lib/clickOutside";
 
     let dropdownOpen = false;
 </script>
 
 
 <nav>
-    <div>
-        <Logo />
-    </div>
-
-    <Tooltip>
-        <b>In controle zijn.</b> Een gebruiker die niet vaak webshops bezoekt, en die ervaart dat er inééns iets op een pagina gebeurt, zonder dat hij/zij bewust iets doet, kan daarvan schrikken. Laat een dropdownmenu pas verschijnen als de gebruiker zélf op het menu klikt. En niet wanneer hij/zij er overheen hoovert.
-    </Tooltip>
-
-    <div class="popout popout-bottom" class:active={dropdownOpen}>
-        <button class="btn btn-primary" on:click={() => dropdownOpen=!dropdownOpen}>
-            Alle producten
-            <i class="ri-arrow-down-s-line"></i>
-        </button>
-        <div class="popout-container">
-            <ul class="menu">
-                <li class="menu-item">
-                    <a href="/products/wasmachines">Wasmachines</a>
-                </li>
-                <li class="menu-item">
-                    <a href="/products/wasmachines">Wasdrogers</a>
-                </li>
-                <li class="menu-item">
-                    <a href="/products/wasmachines">Koelkasten</a>
-                </li>
-                <li class="menu-item">
-                    <a href="/products/wasmachines">Vriezers</a>
-                </li>
-                <li class="menu-item">
-                    <a href="/products/wasmachines">Vaatwassers</a>
-                </li>
-                <li class="menu-item">
-                    <a href="/products/wasmachines">Smartphones</a>
-                <li class="menu-item">
-                    <a href="/products/wasmachines">Tablets</a>
-                </li>
-                <li class="menu-item">
-                    <a href="/products/wasmachines">Monitors</a>
-                </li>
-                <li class="menu-item">
-                    <a href="/products/wasmachines">Laptops</a>
-                </li>
-                <li class="menu-item">
-                    <a href="/products/wasmachines">Waterkokers</a>
-                </li>
-            </ul>
+    <div class="nav-container">
+        <div>
+            <Logo />
         </div>
-    </div>
 
+        <Tooltip>
+            <b>In controle zijn.</b> Een gebruiker die niet vaak webshops bezoekt, en die ervaart dat er inééns iets op een pagina gebeurt, zonder dat hij/zij bewust iets doet, kan daarvan schrikken. Laat een dropdownmenu pas verschijnen als de gebruiker zélf op het menu klikt. En niet wanneer hij/zij er overheen hoovert.
+        </Tooltip>
 
-    <section class="search">
-        <div class="input-group">
-            <input class="form-input" type="text" placeholder="Waar ben je naar op zoek?">
-            <button class="btn btn-primary input-group-btn">
-                <i class="ri-search-line"></i>
-                Zoeken
+        <div class="popout popout-bottom" class:active={dropdownOpen} use:clickOutside on:click_outside={() => dropdownOpen=false}>
+            <button class="btn btn-primary" on:click={() => dropdownOpen=!dropdownOpen}>
+                Alle producten
+                <i class="ri-arrow-down-s-line"></i>
             </button>
+            <div class="popout-container">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="/products/wasmachines">Wasmachines</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/products/wasmachines">Wasdrogers</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/products/wasmachines">Koelkasten</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/products/wasmachines">Vriezers</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/products/wasmachines">Vaatwassers</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/products/wasmachines">Smartphones</a>
+                    <li class="menu-item">
+                        <a href="/products/wasmachines">Tablets</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/products/wasmachines">Monitors</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/products/wasmachines">Laptops</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="/products/wasmachines">Waterkokers</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </section>
 
-    <section>
-        <a class="btn btn-primary" href="/account">
-            <i class="ri-account-circle-fill"></i>
-            Account
-        </a>
-        <a class="btn btn-primary" href="/shopping-cart">
-            <i class="ri-shopping-basket-2-line"></i>
-            Winkelmandje
-            {#if $shoppingCartFull}
-                <div class="shopping-cart-indicator">1</div>
-            {/if}
-        </a>
-    </section>
+
+        <section class="search">
+            <div class="input-group">
+                <input class="form-input" type="text" placeholder="Waar ben je naar op zoek?">
+                <button class="btn btn-primary input-group-btn">
+                    <i class="ri-search-line"></i>
+                    Zoeken
+                </button>
+            </div>
+        </section>
+
+        <section>
+            <a class="btn btn-primary" href="/account">
+                <i class="ri-account-circle-fill"></i>
+                Account
+            </a>
+        </section>
+        <section>
+            <a class="btn btn-primary" href="/shopping-cart">
+                <i class="ri-shopping-basket-2-line"></i>
+                Winkelmandje
+                {#if $shoppingCartFull}
+                    <div class="shopping-cart-indicator">1</div>
+                {/if}
+            </a>
+        </section>
+    </div>
 </nav>
 
 
@@ -92,13 +99,22 @@
         background-color: var(--primary-color);
         z-index: 900;
 
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        justify-content: stretch;
+        .nav-container {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: stretch;
 
-        padding: 1rem;
-        gap: 1rem;
+            width: 100%;
+            max-width: 1500px;
+            margin: 0 auto;
+
+            height: 100%;
+    
+            padding: 1rem;
+            gap: 1rem;
+        }
+
 
         .search {
             flex-grow: 1;
@@ -132,6 +148,15 @@
                 transition: transform .2s;
                 width: 350px;
                 z-index: 300;
+
+                .menu-item a {
+                    padding: .5rem 1rem;
+
+                    &:hover {
+                        background-color: var(--primary-color);
+                        color: white;
+                    }
+                }
             }
 
             &.active .popout-container {
@@ -145,15 +170,6 @@
                     left: 50%;
                     top: 0;
                 }
-
-                &.active.popout-container {
-                    transform: translate(-50%, 100%) scale(1);
-                }
-            }
-
-            .card {
-                box-shadow: 0px 5px 10px rgba(0,0,0,.1);
-                border: 0;
             }
         }
     }

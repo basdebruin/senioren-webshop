@@ -32,5 +32,7 @@
         width: 100px; height: 100px;
 
         opacity: .2;
+
+        clip-path: inset(0 0 27px 0); //crop
     }
 </style>

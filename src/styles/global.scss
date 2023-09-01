@@ -34,19 +34,40 @@ $accessibility-blue: #2653E8;
 .btn, .form-input {
     padding: .5rem 1rem;
     height: auto;
+    color: $dark-color;
 }
 .btn {
     font-weight: 500;
+    border-color: $highlight-color;
+    border-width: 1px;
+
+    i {
+        display: inline-block;
+        transform: scale(1.2);
+    }
+
+    &:hover, &:active {
+        background-color: $light-color;
+        border-color: $dark-color;
+    }
 }
 
 .btn.btn-primary {
     background-color: $secondary-color;
-    border-color: $highlight-color;
+    border-color: $secondary-color;
     color: $dark-color;
+
+    &:hover {
+        border-color: $light-color;
+    }
 }
 
 .btn.btn-small {
     padding: .2rem .7rem;
+}
+
+a:visited, button:visited {
+    color: $dark-color;
 }
 
 // -- Container
