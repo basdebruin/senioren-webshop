@@ -145,7 +145,7 @@
         </div>
         <div class="column">
             <img src="/images/logo-samsung.png" alt="samsung" style="width: 150px; margin-left: -.2rem">
-            <div class="h3">Deze maand <b>20% korting</b> op samsung drogers</div>
+            <div class="h3" style="max-width: 400px">Deze maand <b>20% korting</b> op samsung drogers</div>
         </div>
         <div class="column">
             <Tooltip isLeft={true}>
@@ -167,17 +167,17 @@
     </Tooltip>
     <div class="column col-4">
         <img src="/images/stock-photo-ipad.png" alt="" height="230px" class="img-fit-cover">
-        <h3>Overal via je tablet tv kijken</h3>
+        <h3 class="h4">Overal via je tablet tv kijken</h3>
         <p>Je kiest uit tablets met zowel wifi als wifi en 4G/5G. Met een tablet die 4G/5G ondersteunt, heb je ook toegang tot internet op plekken waar je geen veilige wifi verbinding hebt. Denk dan bijvoorbeeld aan de trein of het park. Je hebt hier wel een eSim of simkaart met mobiel internet voor nodig.</p>
     </div>
     <div class="column col-4">
         <img src="/images/stock-photo-koffie.png" alt="">
-        <h3>Heerlijke koffie in mum van tijd</h3>
+        <h3 class="h4">Heerlijke koffie in mum van tijd</h3>
         <p>Hoe vind je de machine die het beste bij je past? Daar helpen we je graag een handje bij. Zo zetten wij alle koffiezetapparaten voor jou op een rij en leggen we het verschil per machine uit. Heb je hierna nog geen keuze gemaakt? Kom dan naar een van onze winkels en test zelf een koffiemachine.</p>
     </div>
     <div class="column col-4">
         <img src="/images/stock-photo-keuken.png" alt="">
-        <h3>Een keuken in elk huis</h3>
+        <h3 class="h4">Een keuken in elk huis</h3>
         <p>Ga je verhuizen of krijg je een volledig nieuwe keuken? Dan heb je nieuwe keukenapparatuur nodig. Bepaal eerst of je de apparaten gaat inbouwen of dat je voor vrijstaande modellen kiest. Heb je inbouw apparatuur nodig? Let dan goed op de nismaten, zodat je zeker weet dat alles past.</p>
     </div>
 </div>
@@ -267,17 +267,18 @@
     }
 
     .hero-samsung {
-        background: linear-gradient(40deg, var(--highlight-color) 0%, var(--highlight-color) 70%, var(--secondary-color) 70.1%) !important;
+        background: linear-gradient(130deg, var(--highlight-color) 0%, var(--highlight-color) 75%, #12CFF7 75.01%) !important;
 
         max-height: 300px;
         padding: 0;
         margin: 4rem 0;
 
         .columns {
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
+            gap: 3rem;
             width: 100%;
-            max-width: 1500px;
+            max-width: 1400px;
             margin: 0 auto;
         }
         .column {
@@ -293,6 +294,7 @@
     .photo-columns {
         img {
             width: 100%;
+            margin-bottom: 1rem;
         }
     }
 </style>

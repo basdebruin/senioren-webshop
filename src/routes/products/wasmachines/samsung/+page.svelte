@@ -37,7 +37,11 @@
     <div class="columns">
         <!-- Image Gallery -->
         <div class="column col-5">
-            <ImageGallery images={["/images/wasmachine-hires.png", "/images/wasmachine-hires-2.png", "/images/wasmachine-hires-3.png", "/images/wasmachine-hires-4.png"]}/>
+            <ImageGallery 
+                images={["/images/wasmachine-hires.png", "/images/wasmachine-hires-2.png", "/images/wasmachine-hires-3.png", "/images/wasmachine-hires-4.png"]}/>
+            <Tooltip offsetTop={-45} offsetLeft={65}>
+                <b>Foto's zeggen veel meer dan woorden.</b> Als er als kenmerk 'eenvoudig te bedienen' vermeld staat is het bv fijn als er ook een foto is met het bedieningspaneel goed te zien opdat de gebruiker daar zich een mening over kan vormen.
+            </Tooltip>
         </div>
         <!-- Description -->
         <div class="column col-6">

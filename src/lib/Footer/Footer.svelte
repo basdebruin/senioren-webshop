@@ -29,7 +29,7 @@
     <div class="container grid-xl" style="padding: 2rem 0 4rem 0">
         <div class="columns">
             <div class="column col-3">
-                <h4>Klantenservice</h4><br>
+                <h3 class="h5">Klantenservice</h3><br>
                 Retouren en annuleren <br>
                 Betalen<br>
                 Bezorgen<br>
@@ -39,7 +39,7 @@
                 Garantie<br>
             </div>
             <div class="column col-3">
-                <h4>Over Ons</h4><br>
+                <h3 class="h5">Over Ons</h3><br>
                 Over Ons<br>
                 Assortiment<br>
                 Blog<br>
@@ -50,7 +50,7 @@
                 Privacy<br>
             </div>
             <div class="column col-3">
-                <h4 id="onze-winkels">Onze winkel(s)</h4><br>
+                <h3 class="h5" id="onze-winkels">Onze winkel(s)</h3><br>
                 Winkel A<br>
                 Dorpstraat 2<br>
                 1234 AP De Stad<br><br>
@@ -65,7 +65,7 @@
                 <Tooltip isLeft={true}>
                     <b>Winkel in beeld.</b> Als een webwinkel onbekend is, stelt het de oudere online bezoeker gerust als er een fysieke winkel is. Dan heeft men een plek om op terug te vallen. Het tonen van adresgegevens geeft al vertrouwen maar er waren deelnemers die online verder zochten, om te zien of er ook écht een winkel was. Dus heb je een fysieke winkel? Laat deze zien!
                 </Tooltip>
-                <h4>Hoofdkantoor</h4><br>
+                <h3 class="h5">Hoofdkantoor</h3><br>
                 <img src="/images/stock-photo-kantoor.png" alt="een foto kan ons hoofdkantoor">
                 <br><br>
                 Hoofdkantoor <br>
