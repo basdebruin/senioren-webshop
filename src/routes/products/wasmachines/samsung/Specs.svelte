@@ -9,74 +9,63 @@
                 ["Fabrikantcode", "WW90T524AAW/S2"],
                 ["Merk", "Samsung"],
                 ["Garantie", "2 jaar"],
-                ["Afghandeling van je defect", "Bij jou thuis"],
+                ["Afhandeling van je defect", "Bij jou thuis"],
                 ["Oude apparatuur gratis retour", "Ja"]
             ]
         },
         {
             title: "algemene kenmerken",
             data: [
-                ["Artikelnummer", "87037"],
-                ["Fabrikantcode", "WW90T524AAW/S2"],
-                ["Merk", "Samsung"],
-                ["Garantie", "2 jaar"],
-                ["Afghandeling van je defect", "Bij jou thuis"],
-                ["Oude apparatuur gratis retour", "Ja"]
+                ["Type wasmachine", "Voorlader"],
+                ["Vulgewicht", "9 kg"],
+                ["Toerental", "1400rpm"],
+                ["Geluidsniveau centifugeren", "72 dB"],
+                ["Droogresultaat", "B"],
+                ["Duur wascyclus", "228 min"]
             ]
         },
         {
             title: "functionele kenmerken",
             data: [
-                ["Artikelnummer", "87037"],
-                ["Fabrikantcode", "WW90T524AAW/S2"],
-                ["Merk", "Samsung"],
-                ["Garantie", "2 jaar"],
-                ["Afghandeling van je defect", "Bij jou thuis"],
-                ["Oude apparatuur gratis retour", "Ja"]
-            ]
-        },
-        {
-            title: "korte specificaties",
-            data: [
-                ["Artikelnummer", "87037"],
-                ["Fabrikantcode", "WW90T524AAW/S2"],
-                ["Merk", "Samsung"],
-                ["Garantie", "2 jaar"],
-                ["Afghandeling van je defect", "Bij jou thuis"],
-                ["Oude apparatuur gratis retour", "Ja"]
+                ["Gebruiksgemak", "Automatisch uitschakelen, Automatisch wasmiddeldosering, bediening via app, stoomfunctie"],
+                ["Tussentijds toevoegen", "Nee"],
+                ["Wifi ingebouwd", "Nee"],
+                ["Opbouw startuitsel", "1 - 24 uur"],
+                ["Type eindsignaal", "Akkoestisch, Optisch"],
+                ["Display", "Ja"]
             ]
         },
         {
             title: "wasfuncties",
             data: [
-                ["Artikelnummer", "87037"],
-                ["Fabrikantcode", "WW90T524AAW/S2"],
-                ["Merk", "Samsung"],
-                ["Garantie", "2 jaar"],
-                ["Afghandeling van je defect", "Bij jou thuis"],
-                ["Oude apparatuur gratis retour", "Ja"]
+                ["Waskwaliteit", "Topklasse"],
+                ["Kleding beschermende tromer", "Ja"],
+                ["4D Wassen", "Ja"],
+                ["Stoomfunctie", "Ja"],
+                ["Automatsche wasdosering", "Ja"],
+                ["Soort stoomfunctie", "Hygiënisch schoonmaken"],
             ]
         },
         {
             title: "water en energie",
             data: [
-                ["Artikelnummer", "87037"],
-                ["Fabrikantcode", "WW90T524AAW/S2"],
-                ["Merk", "Samsung"],
-                ["Garantie", "2 jaar"],
-                ["Afghandeling van je defect", "Bij jou thuis"],
-                ["Oude apparatuur gratis retour", "Ja"]
+                ["Energieklass", "A"],
+                ["Energiebesparing over levensduur", "330 euro"],
+                ["Milieuvriendelijk", "Ja"],
+                ["Energieverbruik per jaar", "108 kWh"],
+                ["Energiekosten per jaar", "48,6 euro"],
+                ["Watergebruik per jaar", "1100 L"]
             ]
         },
         {
             title: "fysieke eigenschappen",
             data: [
-                ["Artikelnummer", "87037"],
-                ["Fabrikantcode", "WW90T524AAW/S2"],
-                ["Merk", "Samsung"],
-                ["Garantie", "2 jaar"],
-                ["Afghandeling van je defect", "Bij jou thuis"],
-                ["Oude apparatuur gratis retour", "Ja"]
+                ["Diepte", "63,5 cm"],
+                ["Breedte", "60"],
+                ["Hoogte", "85 cm"],
+                ["Gewicht", "68 kg"],
+                ["Kleur", "Wit"],
+                ["Standaard draarichting deur", "Links"]
             ]
         },
     ];
@@ -124,9 +113,18 @@
             }
         }
 
+        table {
+            width: 100%;
+        }
         table tr {
+            width: 100%;
+            position: relative;
+            display: inline-block;
             td {
-                padding: .3rem 21rem .2rem 1rem;
+                //padding: .3rem 21rem .2rem 1rem;
+                display: inline-block;
+                padding: .3rem;
+                width: 50%;
             }
 
             &:nth-child(odd) {

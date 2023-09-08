@@ -100,7 +100,7 @@
 <div class="hero-points hero bg-primary">
     <div class="hero-body container grid-xl">
         <div class="columns">
-            <ul class="column col-4">
+            <ul class="column col-4" style="line-height: 1.9">
                 <Tooltip>
                     <b>Service. </b> In een oogopslag de belangrijke servicepunten in beeld geeft zekerheid. Doe dit met beknopte bullets. Voor velen, maar zeker ook voor de oudere online bezoeker, vormt het retourneerproces een belemmering om te kopen. Zorg ervoor dat retourneren zo makkelijk mogelijk gaat, het liefst zonder printer. Als producten groot of zwaar zijn, kan een ophaalservice uitkomst bieden.
                 </Tooltip>

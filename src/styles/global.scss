@@ -41,15 +41,26 @@ $accessibility-blue: #2653E8;
     border-color: $highlight-color;
     border-width: 1px;
 
-    i {
-        display: inline-block;
-        transform: scale(1.2);
-    }
-
+    
     &:hover, &:active {
         background-color: $light-color;
         border-color: $dark-color;
     }
+}
+
+i {
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 0;
+    margin-left: .1em;
+    
+    &:first-letter {
+        margin-left: 0;
+        margin-right: .1em;
+    }
+}
+.btn i {
+    transform: translateY(.1em);
 }
 
 .btn.btn-primary {
