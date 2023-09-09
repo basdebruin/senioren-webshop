@@ -13,7 +13,7 @@
             <h2>Hoe kunnen we je helpen?</h2>
             <div class="search-bar">
                 <input class="form-input" type="text" placeholder="Stel hier je vraag aan de klantenservice!">
-                <a href="klantenservice" class="btn input-group-btn">
+                <a href="/klantenservice" class="btn input-group-btn">
                     <i class="ri-search-line"></i>
                     Zoeken
                 </a>
