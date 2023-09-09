@@ -3,12 +3,14 @@
 
     let imageIndex = 0;
     let activeImage = images[imageIndex];
+
+    let modalOpen = false;
 </script>
 
 <div class="image-gallery">
-    <div class="main-image">
+    <a href="#open-modal" class="main-image" on:click={() => modalOpen=true}>
         <img src={activeImage} alt="">
-    </div>
+    </a>
 
     <div class="thumbnails">
         {#each images as image, index}
@@ -26,6 +28,13 @@
     </button>
 </div>
 
+<a href="#close-modal" class="modal" class:active={modalOpen} aria-hidden={!modalOpen} on:click={() => modalOpen = false} aria-label="sluit afbeelding">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+        <img src={activeImage} alt="">
+    </div>
+</a>
+
 <style lang="scss">
     .image-gallery {
         position: relative;
@@ -33,6 +42,7 @@
         width: 100%;
 
         .main-image {
+            display: block;
             margin: 1rem auto;
             width: 60%;
             height: 400px;
@@ -41,6 +51,8 @@
                 height: 100%;
                 object-fit: contain;
             }
+
+            cursor: zoom-in;
         }
 
         .thumbnails {
@@ -66,12 +78,27 @@
         .btn-left, .btn-right {
             position: absolute;
             left: 0; top: 40%;
-            padding: .3rem .2rem;
+            padding: .4rem 0 .6rem 0;
             font-size: 1.5rem;
         }
         .btn-right {
             left: unset;
             right: 0;
+        }
+
+    }
+    .modal {
+        z-index: 999;
+
+        cursor: zoom-out;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            max-height: 70vh;
+            padding: 2rem;
+            object-fit: contain;
         }
     }
 </style>
