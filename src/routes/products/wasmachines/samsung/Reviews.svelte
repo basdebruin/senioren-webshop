@@ -50,7 +50,7 @@
 
     </div>
 
-    <div class="column col-8 list">
+    <div class="column col-7 list">
         <div><Stars stars={3}/> 7,2/10 </div>
         <h5 class="h6">Goede wasmachine, zwaar tekortschietende programmering</h5>
         <div class="points">
@@ -80,6 +80,10 @@
 </div>
 
 <style lang="scss">
+
+    .columns {
+        gap: 1rem;
+    }
 
     .total {
         color: var(--primary-color);
@@ -113,6 +117,8 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
+
+        padding-right: .5rem;
 
         font-size: .7rem;
 
