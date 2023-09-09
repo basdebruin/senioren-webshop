@@ -105,10 +105,6 @@
 
     <Reviews />
 
-    <hr>
-
-    <img src="/recenties-samsung.svg" alt="een paneel met recenties, een samenvatting van alle beoordelingen is zichtbaar aan de linkerkant. Aan de rechterkant zijn twee recenties zichtbaar met sterren, positieve en negatieve punten, een korte tekst en de naam van degene die de recentie heef achtergelaten">
-
 </div>
 
 <div class="spacer"></div>

@@ -30,7 +30,7 @@
             </div>
         </div>
 
-        <h4 class="h6">
+        <h4 class="h6" style="margin-top: 1rem">
             Beoordeling per onderdeel
         </h4>
         <div class="by-subject">
@@ -51,7 +51,31 @@
     </div>
 
     <div class="column col-8 list">
+        <div><Stars stars={3}/> 7,2/10 </div>
+        <h5 class="h6">Goede wasmachine, zwaar tekortschietende programmering</h5>
+        <div class="points">
+            <div><i class="ri-add-circle-fill"></i> Wast goed</div>
+            <div><i class="ri-add-circle-fill"></i> Relatief stil</div>
+            <div><i class="ri-add-circle-fill"></i> Automatische dosering (als je net dat ene wasmiddel nodig hebt)</div>
+            <div><i class="ri-indeterminate-circle-fill negative"></i> Geen persoonlijke programma's</div>
+        </div>
+        <p>Deze wasmachine is gekocht op basis van de vele goede reviews en omdat hij op papier alles had wat we zochten. Helaas viel dat toch enigszins tegen</p>
+        <p class="info">Hans | 23 januari 2023 | Heeft de Samsung WW80T654ALX zelf aangeschaft</p>
 
+        <hr>
+
+        <div><Stars stars={4}/> 8,8/10 </div>
+        <h5 class="h6">Helemaal TOP!</h5>
+        <div class="points">
+            <div><i class="ri-add-circle-fill"></i> Stil</div>
+            <div><i class="ri-add-circle-fill"></i> Gebruiksvriendelijk</div>
+        </div>
+        <p>Een prettige wasmachine. Fijn dat hij het wasmiddel zelf doseert. Verder ook een hele stille machine.</p>
+        <p class="info">Mark | 4 december 2022 | Heeft de Samsung WW90T53AAW Autodose zelf aangeschaft</p>
+
+        <hr>
+
+        <a class="link" href="#reviews">Bekijk alle referenties (148)</a>
     </div>
 </div>
 
@@ -61,6 +85,13 @@
         color: var(--primary-color);
         display: flex;
         gap: .5rem;
+        align-items: center;
+    }
+
+    h4, h5 {
+        color: var(--dark-color);
+        margin-top: .3rem;
+        font-weight: bold;
     }
 
     .progress-bars {
@@ -83,6 +114,8 @@
         width: 100%;
         justify-content: space-between;
 
+        font-size: .7rem;
+
         span {
             display: flex;
             justify-content: space-between;
@@ -92,7 +125,40 @@
     }
 
     .list {
+        h5 {
+            color: var(--dark-color);
+            margin-top: .3rem;
+            font-weight: bold;
+        }
+        .points {
+            display: flex;
+            flex-wrap: wrap;
 
+            margin: .5rem 0;
+
+            > div {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+            }
+
+            i {
+                margin: 0;
+                color: #3A9403;
+
+                &.negative {
+                    color: #C20000;
+                }
+            }
+        }
+        .info {
+            color: var(--primary-color);
+        }
+        hr {
+            margin: 1rem 0;
+            border: solid 1px var(--highlight-color);
+        }
     }
 
 </style>

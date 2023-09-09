@@ -13,9 +13,10 @@
 
 <style>
     .stars {
-        display: flex;
+        display: inline-flex;
         flex-wrap: nowrap;
         color: var(--primary-color);
+        margin: 0 0 .5rem 0;
     }
     .stars i {
         font-size: var(--star-size);
