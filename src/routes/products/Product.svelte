@@ -1,5 +1,6 @@
 <script lang="ts">
     import { shoppingCartFull } from "$lib/stores";
+    import EnergieLabel from "./wasmachines/EnergieLabel.svelte";
 
     export let title = "Product title";
     export let img = "";
@@ -37,10 +38,7 @@
             <p><b>{geluidsniveau}</b></p>
             <p>Energielabel</p>
             <p>
-                <span class="energielabel">
-                    <img src="/energie-label.png" alt="">
-                    <span>{energielabel}</span>
-                </span>
+                <EnergieLabel energielabel={energielabel} />
             </p>
         </div>
         <div class="column">
@@ -89,22 +87,5 @@
 
     hr {
         border: solid 1px var(--highlight-color);
-    }
-
-    .energielabel {
-        position: relative;
-
-        img {
-            width: 60px;
-        }
-
-        span {
-            position: absolute;
-            top: -1rem;
-            left: 1.1rem;
-
-            color: white;
-            font-size: 1.2rem;
-        }
     }
 </style>
