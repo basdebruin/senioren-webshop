@@ -93,7 +93,7 @@
                 {/if}
 
             </div>
-            <p>Hulp nodig met bestellen? Bel ons op 0316-123456</p>
+            <p style="margin-top: 1rem">Hulp nodig met bestellen? Bel ons op 0316-123456</p>
 
         </div>
 
@@ -104,7 +104,10 @@
             <button class="btn btn-primary btn-bestellen" on:click={() => stepIndex++}>Ga door met bestellen</button>
         {/if}
         {#if stepIndex == 3}
-            <a class="btn btn-primary btn-bestellen" href="next">Bestelling betalen</a>
+            <div>
+                <a class="btn btn-primary btn-bestellen" href="/order/order-complete">Bestelling betalen</a>
+                <p style="margin-top: 1rem">U gaat nu naar de website van uw bank</p>
+            </div>
         {/if}
         {#if stepIndex==1}
             <p style="margin-top: .5rem">of</p>
