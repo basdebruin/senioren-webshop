@@ -69,7 +69,10 @@ import { shoppingCartFull } from "$lib/stores";
     </div>
 {/if}
 
-<button class="btn" on:click={() => (shoppingCartFull.set(true))}>Add product</button>
+<!-- DEBUG Button -->
+{#if $shoppingCartFull==false}
+    <button class="btn btn-small add-product tooltip tooltip-left" data-tooltip="Vul winkelwagen" on:click={() => (shoppingCartFull.set(true))}><i class="ri-add-circle-fill"></i></button>
+{/if}
 
 <style lang="scss">
     article {
@@ -112,5 +115,15 @@ import { shoppingCartFull } from "$lib/stores";
         display: flex;
         justify-content: space-between;
         margin: 2rem 0;
+    }
+
+    .add-product {
+        position: absolute;
+        top: 3rem;
+        right: 0;
+        margin: 2rem;
+        border-radius: 100%;
+        color: var(--primary-color);
+        padding: .05rem 0 .15rem 0;
     }
 </style>
