@@ -1,5 +1,6 @@
 <script>
-    import Tooltip from "$lib/Tooltip/Tooltip.svelte";
+    import Explainer from "$lib/Tooltip/Explainer.svelte";
+import Tooltip from "$lib/Tooltip/Tooltip.svelte";
     import { shoppingCartFull } from "$lib/stores";
     import ImageGallery from "./ImageGallery.svelte";
     import Reviews from "./Reviews.svelte";
@@ -54,7 +55,11 @@
                 </Tooltip>
             </h3>
             <ul>
-                <li>Doseert altijd de juiste hoeveelheid wasmiddel en wasverzachter dankzij Autodose (<a href="#uitleg">Uitleg</a>).</li>
+                <li>Doseert altijd de juiste hoeveelheid wasmiddel en wasverzachter dankzij Autodose (
+                    <Explainer title="Autodose">
+                        Verspilling wil iedereen graag voorkomen en de Autodose-functie helpt daarbij. Deze functie registreert precies de hoeveelheid was en past daarop de dosering van het wasmiddel en wasverzachter aan. Zo gebruikt de machine nooit te veel of te weinig.
+                    </Explainer>
+                ).</li>
                 <li>De wasmachine heeft met 8 kilogram vulgewicht een ruime trommel.</li>
                 <li>Je wast hiermee zeer grote ladingen was in één keer.</li>
                 <li>Om beddengoed, ondergoed of handdoeken grondig schoon te wassen, gebruik je het hygiënisch stoomprogramma.</li>
@@ -110,6 +115,10 @@
 <div class="spacer"></div>
 
 <style lang="scss">
+    .columns {
+        gap: 1rem;
+    }
+
     .price {
         font-size: 1.7rem;
         font-weight: bold;

@@ -30,6 +30,9 @@
                     <a data-index={index+1} href="#step-{index}" on:click={() => stepIndex = index}>{step.name}</a>
                 </li>
             {/each}
+            <Tooltip isLeft={true} offsetTop={15}>
+                <b>Overzicht.</b> Het zijn vaak best wat stappen die een koper moet doorlopen. Het is fijn dat deze stappen inzichtelijk zijn.
+            </Tooltip>
         </ul>
     </div>
 
@@ -55,6 +58,7 @@
             <h2 class="h4">Jouw bestelling (winkelmandje)</h2>
             <div class="product">
                 <h3 class="h5">Samsung, super zuinig met automatische wasdosering</h3>
+              
                 <p>Typenummer: WW90T534AAW</p>
                 <div class="columns">
                     <div class="column col-auto">
@@ -96,7 +100,12 @@
     </article>
 
     <div class="flex-row">
-        <button class="btn btn-primary btn-bestellen" on:click={() => stepIndex++}>Ga door met bestellen</button>
+        {#if stepIndex < 3}
+            <button class="btn btn-primary btn-bestellen" on:click={() => stepIndex++}>Ga door met bestellen</button>
+        {/if}
+        {#if stepIndex == 3}
+            <a class="btn btn-primary btn-bestellen" href="next">Bestelling betalen</a>
+        {/if}
         {#if stepIndex==1}
             <p style="margin-top: .5rem">of</p>
             <button class="btn">Ik wil een account maken</button>
@@ -154,7 +163,17 @@
         margin: 2rem 0;
     }
 
+    .flex-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
     // lines
+    .step-item * {
+        color: var(--primary-color) !important;
+    }
     .step .step-item:not(:first-child)::before {
         height: 6px;
         top: 0rem;

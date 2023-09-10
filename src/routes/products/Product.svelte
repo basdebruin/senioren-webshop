@@ -83,6 +83,7 @@
 
     .btn {
         margin: .3rem 0;
+        width: 100%;
     }
 
     hr {

@@ -28,7 +28,7 @@
 
 <style lang="scss">
     .verzendgegevens {
-        border: solid 2px var(--primary-color);
+        border: solid 2px var(--highlight-color);
         padding: 1rem;
         margin-bottom: 1rem;
 

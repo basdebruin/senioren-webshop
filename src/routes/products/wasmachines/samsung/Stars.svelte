@@ -5,7 +5,7 @@
 
 </script>
 
-<div class="stars" style="--star-size: {size}">
+<div class="stars" style="--star-size: {size}" aria-label="{stars} sterren">
     {#each Array(5) as a, index}
         <i class={index < stars ? "ri-star-fill" : "ri-star-line"}></i>
     {/each}
