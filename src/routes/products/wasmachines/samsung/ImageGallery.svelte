@@ -96,9 +96,19 @@
             display: block;
             width: 100%;
             height: 100%;
-            max-height: 70vh;
+            max-height: 80vh;
             padding: 2rem;
             object-fit: contain;
+        }
+
+        .modal-overlay {
+            background: rgba(255,255,255,.8);
+            cursor: zoom-out;
+        }
+
+        .modal-container {
+            background: none;
+            box-shadow: none;
         }
     }
 </style>
