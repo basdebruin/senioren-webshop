@@ -118,6 +118,7 @@
 
     .hero-search {
         position: relative;
+        overflow: hidden;
 
         h2 {
             color: black;
