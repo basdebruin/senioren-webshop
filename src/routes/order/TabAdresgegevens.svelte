@@ -24,15 +24,16 @@
     </div>
 
     <div class="flex-stretch">
-        <Input label="Voornaam"/>
-        <label style="width: 6rem">
-            Tussenv.
-            <input type="text" class="form-input">
-        </label>
-        <label>
-            Achternaam
-            <input type="text" class="form-input">
-        </label>
+        <Input 
+            label="Voornaam"
+            clickedText="Naam"/>
+        <Input 
+            label="Tussenv."
+            clickedText="van"
+            width="60%"/>
+        <Input 
+            label="Achternaam"
+            clickedText="Klant"/>
     </div>
 
     <Tooltip offsetLeft={-20} offsetTop={55}>
@@ -40,14 +41,12 @@
     </Tooltip>
 
     <div class="flex-row">
-        <label>
-            Postcode
-            <input type="text" class="form-input">
-        </label>
-        <label>
-            Huisnummer
-            <input type="text" class="form-input">
-        </label>
+        <Input 
+            label="Postcode"
+            clickedText="1234AB"/>
+        <Input 
+            label="Huisnummer"
+            clickedText="1"/>
     </div>
 
     <div class="flex-stretch">
@@ -67,20 +66,20 @@
     </div>
 
     <div class="flex-stretch">
-        <label>
-            E-mailadres
-            <input type="text" class="form-input">
-        </label>
+        <Input 
+            label="Emailadres"
+            clickedText="mail@klantnl"
+            clickedState="error"
+            bottomLabel="Er zit een fout in uw emailadres"/>
     </div>
     <div class="flex-stretch">
-        <label>
-            Telefoonnummer (om je eventueel te kunnen informeren)
-            <input type="text" class="form-input">
-            <Tooltip offsetLeft={-20} offsetTop={-10}>
-                <b>Zo min mogelijk inspanning en fouten.</b> Vraag alleen de informatie die echt nodig is of vertel waarom je extra informatie vraagt. 
-            </Tooltip>
-        </label>
+        <Input 
+            label="Telefoonnummer"
+            clickedText="061234567"/>
     </div>
+    <Tooltip offsetLeft={-20} offsetTop={-33}>
+        <b>Zo min mogelijk inspanning en fouten.</b> Vraag alleen de informatie die echt nodig is of vertel waarom je extra informatie vraagt. 
+    </Tooltip>
 
 </div>
 
