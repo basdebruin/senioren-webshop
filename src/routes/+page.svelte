@@ -1,3 +1,19 @@
+<script>
+    import { onMount } from "svelte";
+
+    let mobileModalActive = false;
+    onMount(()=> {
+        if (window.innerWidth < 1000)
+            mobileModalActive = true
+    });
+
+    function copyToClipboard() {
+        navigator.clipboard.writeText(
+            window.location.origin
+        )
+    }
+</script>
+
 <div class="fixed-page">
 
 <div class="hero">
@@ -28,6 +44,21 @@
 
 </div>
 
+
+<!-- MOBILE POPUP -->
+{#if mobileModalActive}
+    <article class="fixed-page mobile-warning">
+        <h2>Niet gemaakt voor mobiel</h2>
+        <p>Het lijkt erop dat je deze website probeert te openen op een mobiel apparaat. Deze voorbeeld webshop is alleen ontworpen voor desktop.</p>
+        <button class="btn btn-primary" on:click={()=>mobileModalActive=false}>
+            <i class="ri-close-fill"></i> Negeer
+        </button>
+        <button class="btn" on:click={copyToClipboard}>
+            <i class="ri-clipboard-line"></i> Kopieer webadres naar klembord
+        </button>
+    </article>
+{/if}
+
 <style lang="scss">
     h2 {
         font-weight: normal;
@@ -55,5 +86,18 @@
     article {
         padding: 3rem;
         gap: 2rem;
+    }
+
+    .mobile-warning {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        text-align: center;
+        
+        z-index: 1000;
+        background-color: white;
+        min-height: 100%;
+        padding: 1rem;
     }
 </style>
