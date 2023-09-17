@@ -16,7 +16,7 @@
             <Logo />
         </div>
 
-        <Tooltip>
+        <Tooltip offsetLeft={35} offsetTop={28}>
             <b>In controle zijn.</b> Een gebruiker die niet vaak webshops bezoekt, en die ervaart dat er inééns iets op een pagina gebeurt, zonder dat hij/zij bewust iets doet, kan daarvan schrikken. Laat een dropdownmenu pas verschijnen als de gebruiker zélf op het menu klikt. En niet wanneer hij/zij er overheen hoovert.
         </Tooltip>
 
@@ -72,6 +72,9 @@
         </section>
 
         <section>
+            <Tooltip offsetLeft={15} offsetTop={50} isLeft={true}>
+                <b>Herkenbaarheid en bevestiging.</b> In het onderzoek vonden diverse deelnemers het spannend om op een icoon te klikken. Iconen zijn niet voor iedereen meteen duidelijk. Maak dus gebruik van herkenbare iconen, zoals die op de meeste webshops te zien zijn, in combinatie met tekst.
+            </Tooltip>
             <a class="btn btn-primary" href="/account">
                 <i class="ri-account-circle-fill"></i>
                 Account

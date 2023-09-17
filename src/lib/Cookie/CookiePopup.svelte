@@ -24,7 +24,7 @@
                 <button class="btn btn-primary">
                     Voorkeuren aanpassen
                 </button>
-                <a href="#close">Informatie over gegevensbescherming</a>
+                <a href="#close" class="link">Informatie over gegevensbescherming</a>
             </div>
 
             <div class="col-3">
