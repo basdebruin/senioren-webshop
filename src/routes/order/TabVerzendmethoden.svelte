@@ -1,4 +1,6 @@
 <script>
+    import Tooltip from "$lib/Tooltip/Tooltip.svelte";
+
     let dates = [
         { date: "Do 6 feb", time: "8:30 - 17:00" },
         { date: "Do 6 feb", time: "14:00 - 21:00" },
@@ -11,6 +13,9 @@
 <div class="column">
     <h2 class="h4">Verzendgegevens</h2>
     <div class="verzendgegevens">
+        <Tooltip offsetLeft={570} offsetTop={30}>
+            <b>Kiezen wanneer en door wie.</b> Ouderen zijn druk, net zoals andere online gebruikers, dus wanneer ze zelf een bezorgmoment kunnen kiezen is dat fijn. Maak je gebruik van verschillende koeriersdiensten? Vermeldt dit erbij. Want uit het onderzoek bleek regelmatig dat oudere bezoekers zo hun voorkeuren voor de een of andere dienst hebben.
+        </Tooltip>
         <label class="checkbox">
             <input type="radio" name="aansluiting" checked> Bezorgmoment
         </label>

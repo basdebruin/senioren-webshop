@@ -13,7 +13,10 @@
         { name: "Adresgegevens",    component: TabAdresgegevens },
         { name: "Verzendmethoden",  component: TabVerzendmethoden },
         { name: "Betaalmethoden",   component: TabBetaalmethoden },
-    ]
+    ];
+
+    let accountActive = false;
+    let accountPasswordShown = false;
 </script>
 
 <div class="spacer" style="height: 100px"></div>
@@ -99,6 +102,8 @@
 
     </article>
 
+    <!-- Bestellen en Account -->
+
     <div class="flex-row">
         {#if stepIndex < 3}
             <button class="btn btn-primary btn-bestellen" on:click={() => stepIndex++}>Ga door met bestellen</button>
@@ -111,7 +116,7 @@
         {/if}
         {#if stepIndex==1}
             <p style="margin-top: .5rem">of</p>
-            <button class="btn">Ik wil een account maken</button>
+            <button class="btn" on:click={()=>accountActive=true}>Ik wil een account maken</button>
             <div>
                 <h5 class="h6">Voordelen van een account</h5>
                 <p>
@@ -124,6 +129,22 @@
             </Tooltip>
         {/if}
     </div>
+    {#if stepIndex==1}
+        <div class="account" class:active={accountActive}>
+            <h3 class="h5">Account aanmaken</h3>
+            <div class="flex-row">
+                <Input 
+                label="Wachtwoord"
+                    clickedText={accountPasswordShown ? "wachtwoord123" : "•••••••••••••"}
+                    width="30rem"/>
+                <button class="show-password" on:click={() => accountPasswordShown=!accountPasswordShown}>
+                    <i class=  {accountPasswordShown ? "ri-eye-off-fill" : "ri-eye-fill"}></i>
+                    Wachtwoord {accountPasswordShown ? "verbergen" : "tonen"}
+                </button>
+            </div>
+            <button class="btn btn-primary btn-bestellen" on:click={() => stepIndex++}>Ga door met bestellen</button>
+        </div>
+    {/if}
 
 
 </main>
@@ -203,4 +224,29 @@
         color: white;
     }
 
+
+    // Make Account 
+    .account {
+        &:not(.active){
+            opacity: .1;
+            pointer-events: none;
+        }
+        .show-password {
+            display: inline-flex;
+            align-items: center;
+            background: none;
+            border: none;
+            margin-top: 1.4rem;
+            cursor: pointer;
+
+            border-radius: .2rem;
+            padding: 0 .5rem;
+
+            transition: background .2s;
+            &:hover {
+                background-color: var(--secondary-color);
+            }
+        }
+    }
+    
 </style>
