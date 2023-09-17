@@ -1,5 +1,7 @@
 <script lang="ts">
-    import { shoppingCartFull } from "$lib/stores";
+    import Explainer from "$lib/Tooltip/Explainer.svelte";
+    import Tooltip from "$lib/Tooltip/Tooltip.svelte";
+import { shoppingCartFull } from "$lib/stores";
     import EnergieLabel from "./wasmachines/EnergieLabel.svelte";
 
     export let title = "Product title";
@@ -28,10 +30,22 @@
             <p><b>{vulgewicht}</b></p>
             <p>Toerental</p>
             <p><b>{toerental}</b></p>
-            <label class="form-checkbox">
-                <input type="checkbox">
-                <i class="form-icon"></i> Vergelijken
-            </label> 
+
+            <div class="compare">
+                <label class="form-checkbox">
+                    <input type="checkbox">
+                    <i class="form-icon"></i> Vergelijken
+                </label> 
+                <Explainer title="Vergelijken">
+                    <b>Hoe werkt dit?</b> <br>
+                    Zet een vinkje bij 'Vergelijk' bij drie
+                    producten die je graag met elkaar wil
+                    vergelijken. Er verschijnt een nieuw venster met de gekozen producten naast elkaar.
+                </Explainer>
+                <Tooltip offsetLeft={40} offsetTop={14}>
+                    <b>Vergelijken.</b> Oudere gebruikers nemen de tijd om zich te oriënteren, meerder producten met elkaar kunnen vergelijken in een oogopslag helpt hen een goede keuze te kunnen maken.
+                </Tooltip>
+            </div>
         </div>
         <div class="column">
             <p>Geluidsniveau</p>
@@ -88,5 +102,10 @@
 
     hr {
         border: solid 1px var(--highlight-color);
+    }
+
+    .compare {
+        display: flex;
+        align-items: center;
     }
 </style>

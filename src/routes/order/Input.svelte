@@ -18,7 +18,7 @@
                 {clickedText}
 
                 <div class="icon">
-                    <img src={"/check-fill.svg"} alt={clickedState}>
+                    <i class={clickedState=="success" ? "ri-check-fill" : "ri-close-fill"}></i>
                 </div>
             {/if}
 
@@ -45,11 +45,16 @@
         position: absolute;
         top: .4rem;
         right: .5rem;
-        display: block;
+        display: flex;
         width: 28px;
         height: 28px;
         border: solid 2px var(--primary-color);
         border-radius: 100%;
+        
+        i {
+            color: inherit;
+            transform: translate(-.1rem, .03rem);
+        }
     }
     
     label.clicked {
@@ -57,12 +62,14 @@
             color: darkred;
             button, .icon {
                 border-color: darkred;
+                color: darkred;
             }
         }
         &.success {
             color: green;
             button, .icon {
                 border-color: green;
+                color: green;
             }
         }
     }

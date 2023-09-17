@@ -78,7 +78,7 @@
         .btn-left, .btn-right {
             position: absolute;
             left: 0; top: 40%;
-            padding: .4rem 0 .6rem 0;
+            padding: .4rem 0 .5rem 0;
             font-size: 1.5rem;
         }
         .btn-right {

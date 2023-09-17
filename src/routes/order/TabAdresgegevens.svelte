@@ -2,6 +2,7 @@
     import Tooltip from "$lib/Tooltip/Tooltip.svelte";
     import Input from "./Input.svelte";
 
+    let adressActive = false;
 </script>
 
 
@@ -43,28 +44,30 @@
     <div class="flex-row">
         <Input 
             label="Postcode"
-            clickedText="1234AB"/>
+            clickedText="1234AB"
+            bind:clicked={adressActive}/>
         <Input 
             label="Huisnummer"
-            clickedText="1"/>
+            clickedText="1"
+            bind:clicked={adressActive}/>
     </div>
 
     <div class="flex-stretch">
-        <label>
-            Straatnaam
-            <input type="text" class="form-input" disabled>
-        </label>
+        <Input 
+            label="Straatnaam"
+            clickedText="Straatnaam"
+            bind:clicked={adressActive}/>
     </div>
     <div class="flex-stretch">
-        <label style="margin-right: -1rem">
-            Plaats
-            <input type="text" class="form-input" disabled>
-        </label>
-        <Tooltip offsetLeft={45} offsetTop={60}>
-            <b>Duidelijke foutmelding.</b> Niet verder kunnen met bestellen omdat er een fout in het formulier zit, waarbij dit niet duidelijk is, vormt voor oudere gebruikers een afhaakmoment. Laat het zien als het goed gaat (groen kader en vinkjes). Als het toch fout gaat, laat dan precies zien waar de fout zit en licht dit vriendelijk en duidelijk toe.
-        </Tooltip>
+        <Input 
+            label="Plaats"
+            clickedText="Plaatsnaam"
+            bind:clicked={adressActive}/>
     </div>
 
+    <Tooltip offsetLeft={-20} offsetTop={60}>
+        <b>Duidelijke foutmelding.</b> Niet verder kunnen met bestellen omdat er een fout in het formulier zit, waarbij dit niet duidelijk is, vormt voor oudere gebruikers een afhaakmoment. Laat het zien als het goed gaat (groen kader en vinkjes). Als het toch fout gaat, laat dan precies zien waar de fout zit en licht dit vriendelijk en duidelijk toe.
+    </Tooltip>
     <div class="flex-stretch">
         <Input 
             label="Emailadres"
@@ -72,15 +75,17 @@
             clickedState="error"
             bottomLabel="Er zit een fout in uw emailadres"/>
     </div>
+    
+    <Tooltip offsetLeft={-20} offsetTop={60}>
+        <b>Zo min mogelijk inspanning en fouten.</b> Vraag alleen de informatie die echt nodig is of vertel waarom je extra informatie vraagt. 
+    </Tooltip>
     <div class="flex-stretch">
         <Input 
             label="Telefoonnummer"
-            clickedText="061234567"/>
+            clickedText="06123456"
+            clickedState="error"
+            bottomLabel="Er ontbreekt een cijfer uit uw telefoonnummer"/>
     </div>
-    <Tooltip offsetLeft={-20} offsetTop={-33}>
-        <b>Zo min mogelijk inspanning en fouten.</b> Vraag alleen de informatie die echt nodig is of vertel waarom je extra informatie vraagt. 
-    </Tooltip>
-
 </div>
 
 <style lang="scss">
@@ -95,14 +100,8 @@
 
     .flex-stretch {
         @extend .flex-row;
-        gap: 1rem;
         width: 100%;
         justify-content: stretch;
-
-        label {
-            display: block;
-            width: 100%;
-        }
     }
 
 </style>
