@@ -14,19 +14,19 @@
         </h4>
         <div class="progress-bars">
             <div>
-                5 sterren <progress class="progress" value="7" max="10"></progress> 107 referenties
+                5 sterren <span style="--value: 70%"></span> 107 referenties
             </div>
             <div>
-                4 sterren <progress class="progress" value="3" max="10"></progress> 36 referenties
+                4 sterren <span style="--value: 30%"></span> 36 referenties
             </div>
             <div>
-                3 sterren <progress class="progress" value="5" max="100"></progress> 3 referenties
+                3 sterren <span style="--value: 5%"></span> 3 referenties
             </div>
             <div>
-                2 sterren <progress class="progress" value="3" max="100"></progress> 2 referenties
+                2 sterren <span style="--value: 3%"></span> 2 referenties
             </div>
             <div>
-                1 sterren <progress class="progress" value="0" max="100"></progress> 0 referenties
+                1 sterren <span style="--value: 0%"></span> 0 referenties
             </div>
         </div>
 
@@ -101,16 +101,33 @@
     .progress-bars {
         font-size: .7rem;
         margin-bottom: .5rem;
-    }
 
-    .progress {
-        font-size: 2rem;
-        overflow: visible;
-        height: 0;
-        accent-color: var(--primary-color);
-        transform: translateY(.3rem);
-        width: 50%;
-        margin: 0 .3rem;
+        div {
+            display: flex;
+            gap: 1rem;
+            align-items: baseline;
+            margin: .5rem 0;
+        }
+
+        span {
+            position: relative;
+            display: inline-block;
+            width: 50%;
+            height: 10px;
+            border-radius: 5px;
+            border: 1px var(--primary-color) solid;
+
+            &::after {
+                content: " ";
+                display: block;
+                position: absolute;
+                top: 0; left: 0;
+                width: var(--value);
+                height: 100%;
+                background-color: var(--primary-color);
+                border-radius: 5px;
+            }
+        }
     }
 
     .by-subject > div {
