@@ -25,6 +25,7 @@
                 Alle producten
                 <i class="ri-arrow-down-s-line"></i>
             </button>
+            
             <div class="popout-container">
                 <ul class="menu">
                     <li class="menu-item">
@@ -141,7 +142,7 @@
             position: relative;
 
             .popout-container {
-                display: block;
+                display: none;
                 left: 50%;
                 opacity: 0;
                 padding: .5rem;

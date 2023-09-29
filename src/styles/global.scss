@@ -17,8 +17,12 @@ $accessibility-blue: #2653E8;
     --accessibility-blue: #2653E8;
 
 }
-* {
+*, *::before, *::after {
     box-sizing: border-box;
+}
+*:focus {
+    outline: solid 2px #046B99 !important;
+    border-color: white !important;
 }
 
 
