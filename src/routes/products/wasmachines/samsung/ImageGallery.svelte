@@ -8,7 +8,7 @@
 </script>
 
 <div class="image-gallery">
-    <a href="#open-modal" class="main-image" on:click={() => modalOpen=true}>
+    <a href="#open-modal" class="main-image" on:click={() => modalOpen=!modalOpen} aria-label="maak afbeelding groter">
         <img src={activeImage} alt="">
     </a>
 
