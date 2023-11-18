@@ -33,6 +33,6 @@
 
         opacity: .2;
 
-        clip-path: inset(0 0 27px 0); //crop
+        clip-path: inset(0 0 16px 0); //crop
     }
 </style>

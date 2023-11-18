@@ -99,7 +99,7 @@
         position: fixed;
         top: 0; left: 0;
         width: 100%;
-        height: 3rem;
+        height: 4rem;
         background-color: var(--primary-color);
         z-index: 900;
 
