@@ -145,13 +145,13 @@
         </div>
         <div class="column">
             <img src="/images/logo-samsung.png" alt="samsung" style="width: 150px; margin-left: -.2rem">
-            <div class="h3" style="max-width: 400px">Deze maand <b>20% korting</b> op samsung drogers</div>
+            <div class="h3" style="max-width: 400px">Deze maand <b>20% korting</b> op Samsung drogers</div>
         </div>
         <div class="column">
             <Tooltip isLeft={true}>
                 <b>Reclame/Acties.</b> In ons onderzoek bleek er weinig aandacht te zijn voor actiebanners, meestal zorgden de banners juist voor afleiding of verwarring. Een enkele keer klikte men erop door maar dit waren meestal eenvoudige banners met een heldere boodschap.
             </Tooltip>
-            <a href="#advertentie" class="btn">Meer over deze actie</a>
+            <a href="#advertentie" class="btn" style="transform: scale(1.2)">Meer over deze actie</a>
         </div>
     </div>
 </div>
@@ -292,9 +292,15 @@
     }
 
     .photo-columns {
+        
+        .column:not(:last-child) {
+            padding-right: 2rem;
+        }
         img {
             width: 100%;
             margin-bottom: 1rem;
+            height: 12rem;
+            object-fit: cover;
         }
     }
 </style>
