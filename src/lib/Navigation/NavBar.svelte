@@ -64,7 +64,7 @@
 
         <section class="search">
             <div class="input-group">
-                <input class="form-input" type="text" placeholder="Waar ben je naar op zoek?">
+                <input class="form-input" type="text" value="Waar ben je naar op zoek?">
                 <button class="btn btn-primary input-group-btn">
                     <i class="ri-search-line"></i>
                     Zoeken
@@ -122,6 +122,10 @@
 
         .search {
             flex-grow: 1;
+            input {
+                border-color: white;
+                color: #444;
+            }
         }
 
         .shopping-cart-indicator {
