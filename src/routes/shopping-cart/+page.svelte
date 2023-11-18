@@ -120,10 +120,10 @@ import { shoppingCartFull } from "$lib/stores";
     .add-product {
         position: absolute;
         top: 3rem;
-        right: 0;
+        right: -2rem;
         margin: 2rem;
         border-radius: 100%;
         color: var(--primary-color);
-        padding: .05rem 0 .15rem 0;
+        border: none;
     }
 </style>
