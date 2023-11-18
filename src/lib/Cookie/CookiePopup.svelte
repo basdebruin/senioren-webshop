@@ -5,6 +5,8 @@
 
     let close = () => 
         popupVisible = false;
+
+    let openPreferences = false;
 </script>
 
 <article class="modal" class:active={popupVisible} aria-hidden={!popupVisible}>
@@ -19,12 +21,29 @@
         </div>
         <div class="columns">
             <div class="col-9">
-                <p>Wil je graag de beste website ervaring? Klik dan op “Accepteren”. Je gaat ermee akkoord dat wij jouw internet gedrag op deze website volgen. Dit stelt ons in staat om de website te optimaliseren en jou persoonlijkere advertenties te bieden.</p>
-                <p>Kies je voor “Weigeren”, dan zullen wij alleen de noodzakelijke sessie gerelateerde cookies gebruiken om de gebruiksvriendelijkheid te verbeteren en om statistisch bereik te meten.</p>
-                <button class="btn btn-primary">
-                    Voorkeuren aanpassen
-                </button>
-                <a href="#close" class="link">Informatie over gegevensbescherming</a>
+                {#if !openPreferences}
+                    <p>Wil je graag de beste website ervaring? Klik dan op “Accepteren”. Je gaat ermee akkoord dat wij jouw internetgedrag op deze website volgen. Dit stelt ons in staat om de website te optimaliseren en jou persoonlijkere advertenties te bieden.</p>
+                    <p>Kies je voor “Weigeren”, dan zullen wij alleen de noodzakelijke sessie-gerelateerde cookies gebruiken om de gebruiksvriendelijkheid te verbeteren en om statistisch bereik te meten. Je kunt er ook voor kiezen om met de knop hieronder je Voorkeuren aan te passen</p>
+                    <button class="btn btn-primary" on:click={()=>openPreferences=true}>
+                        Voorkeuren aanpassen
+                    </button>
+                    <a href="#close" class="link">Informatie over gegevensbescherming</a>
+                {/if}
+                {#if openPreferences}
+                    <p>Selecteer hieronder welke cookies je toe wilt staan. Houd er rekening mee dat bij het uitsluiten van cookies sommige functionaliteiten van de website niet langer kunnen werken.</p>
+                    <div class="checkboxes">
+                        <label class="checkbox">
+                            <input type="radio" name="cookie"> Functionaliteiten
+                        </label>
+                        <label class="checkbox">
+                            <input type="radio" name="cookie"> Marketing
+                        </label>
+                        <label class="checkbox">
+                            <input type="radio" name="cookie"> Derde partijen
+                        </label>
+                    </div>
+                    <a href="#close" class="link">Informatie over gegevensbescherming</a>
+                {/if}
             </div>
 
             <div class="col-3">
@@ -55,5 +74,13 @@
     .col-3 > * {
         width: 90%;
         margin-left: 10%;
+    }
+
+    .checkboxes {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
     }
 </style>
