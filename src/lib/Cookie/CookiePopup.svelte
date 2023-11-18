@@ -1,12 +1,21 @@
 <script lang="ts" type="module">
     import Tooltip from "$lib/Tooltip/Tooltip.svelte";
+    import { showCookie } from "$lib/stores";
+    import { onMount } from "svelte";
 
-    let popupVisible= true;
+    let popupVisible = true;
 
     let close = () => 
         popupVisible = false;
 
     let openPreferences = false;
+
+    // only show Cookie popup on first visit
+    onMount(() => {
+        popupVisible = $showCookie;
+        if ($showCookie)
+            showCookie.set(false);
+    })
 </script>
 
 <article class="modal" class:active={popupVisible} aria-hidden={!popupVisible}>
