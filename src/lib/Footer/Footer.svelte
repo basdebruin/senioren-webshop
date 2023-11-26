@@ -1,5 +1,18 @@
 <script>
+    import { navigating } from "$app/stores";
     import Tooltip from "$lib/Tooltip/Tooltip.svelte";
+    import { onMount } from "svelte";
+
+    let isHomepage = true;
+
+    let fn = () => {
+        isHomepage = (window.location.pathname == "/home");
+        console.log(window.location.pathname);
+    }
+    onMount(() => {
+        fn();
+        window.addEventListener("click", fn);
+    });
 
 </script>
 <footer>
@@ -7,9 +20,11 @@
 
     <div class="hero hero-search" style="background: var(--highlight-color)">
         <div class="container grid-xl">
-            <Tooltip>
-                <b>Zoeken.</b> De zoekfunctie wordt vaak gebruikt. Niet alleen voor het zoeken naar producten, waarbij de vraag soms heel gedetailleerd is, zoals een kleine televisie met internet, maar ook voor vragen over bezorging, service, betaling etc. Werkt je zoekmachine goed, geeft het suggesties en gaat het vriendelijk om met typefouten? Dan is de zoekfunctie een uitkomst voor veel oudere online bezoekers.
-            </Tooltip>
+            {#if isHomepage}
+                <Tooltip>
+                    <b>Zoeken.</b> De zoekfunctie wordt vaak gebruikt. Niet alleen voor het zoeken naar producten, waarbij de vraag soms heel gedetailleerd is, zoals een kleine televisie met internet, maar ook voor vragen over bezorging, service, betaling etc. Werkt je zoekmachine goed, geeft het suggesties en gaat het vriendelijk om met typefouten? Dan is de zoekfunctie een uitkomst voor veel oudere online bezoekers.
+                </Tooltip>
+            {/if}
             <h2>Hoe kunnen we je helpen?</h2>
             <div class="search-bar">
                 <input class="form-input" type="text" value="Stel hier je vraag aan de klantenservice!" style="color: #444">
@@ -62,9 +77,11 @@
                 9101 XT Wonsel<br>
             </div>
             <div class="column col-3">
-                <Tooltip isLeft={true}>
-                    <b>Winkel in beeld.</b> Als een webwinkel onbekend is, stelt het de oudere online bezoeker gerust als er een fysieke winkel is. Dan heeft men een plek om op terug te vallen. Het tonen van adresgegevens geeft al vertrouwen maar er waren deelnemers die online verder zochten, om te zien of er ook écht een winkel was. Dus heb je een fysieke winkel? Laat deze zien!
-                </Tooltip>
+                {#if isHomepage}
+                    <Tooltip isLeft={true}>
+                        <b>Winkel in beeld.</b> Als een webwinkel onbekend is, stelt het de oudere online bezoeker gerust als er een fysieke winkel is. Dan heeft men een plek om op terug te vallen. Het tonen van adresgegevens geeft al vertrouwen maar er waren deelnemers die online verder zochten, om te zien of er ook écht een winkel was. Dus heb je een fysieke winkel? Laat deze zien!
+                    </Tooltip>
+                {/if}
                 <h3 class="h5">Hoofdkantoor</h3><br>
                 <img src="/images/stock-photo-kantoor.png" alt="een foto kan ons hoofdkantoor">
                 <br><br>
