@@ -37,13 +37,16 @@ import Product from "../Product.svelte";
 
             <!-- Title -->
             <h1>Wasmachines</h1>
+            <Tooltip offsetLeft={200} offsetTop={-12}>
+                <b>Een titel met informatie.</b> De meeste webshops gebruiken een productnummer in de titel boven een product. In het productoverzicht helpt een beschrijvende titel met het geven van een richting om zo tot een keuze te komen. Het is wel belangrijk dat het productnummer zichtbaar blijft, want via dit nummer kan men online, buiten de webshop om, naar meer informatie of naar recensies zoeken.
+            </Tooltip>
             <p>
                 Je kunt de wasmachine die voor jou geschikt is makkelijker vinden door je voorkeuren hier links aan te geven. Na het toepassen van de voorkeuren zie je de wasmachines die aan jouw wensen voldoen.
             </p>
             
             <!-- Products -->
             <Tooltip offsetLeft={-20} offsetTop={45}>
-                <b>Een titel met informatie.</b> De meeste webshops gebruiken een productnummer in de titel boven een product. In het productoverzicht helpt een beschrijvende titel met het geven van een richting om zo tot een keuze te komen. Het is wel belangrijk dat het productnummer zichtbaar blijft, want via dit nummer kan men online, buiten de webshop om, naar meer informatie of naar recensies zoeken.
+                <b>Vergelijken: 3 producten boven de 'vouw'.</b> De oudere gebruiker wil makkelijk kunnen vergelijken, door drie producten in beeld te hebben met de belangrijkste ken-merken kan de bezoeker al een voorverkenning doen zonder naar 'meer informatie' te gaan. Sommige deelnemers gingen vanaf hier meteen door naar 'bestel nu'
             </Tooltip>
             <Product 
                 title="Samsung superzuinig met automatisch wasmiddeldosering" 
