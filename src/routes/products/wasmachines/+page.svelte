@@ -1,6 +1,6 @@
 <script>
     import Tooltip from "$lib/Tooltip/Tooltip.svelte";
-import Product from "../Product.svelte";
+    import Product from "../Product.svelte";
 
 </script>
 <div class="spacer"></div>
@@ -23,7 +23,7 @@ import Product from "../Product.svelte";
         </Tooltip>
     </ul>
 
-    <div class="spacer"></div>
+    <div class="spacer" style="height: 2rem"></div>
 
     <div class="columns">
         <!-- Filters -->
@@ -39,7 +39,7 @@ import Product from "../Product.svelte";
             </p>
             
             <!-- Products -->
-            <Tooltip offsetLeft={-20} offsetTop={45}>
+            <Tooltip offsetLeft={-20} offsetTop={25}>
                 <b>Vergelijken: 3 producten boven de 'vouw'.</b> De oudere gebruiker wil makkelijk kunnen vergelijken, door drie producten in beeld te hebben met de belangrijkste ken-merken kan de bezoeker al een voorverkenning doen zonder naar 'meer informatie' te gaan. Sommige deelnemers gingen vanaf hier meteen door naar 'bestel nu'
             </Tooltip>
             <Product 
@@ -51,10 +51,8 @@ import Product from "../Product.svelte";
                 energielabel="A"
                 onzeKeuze={true}
                 prijs={699}
+                showTooltip={true}
             />
-            <Tooltip offsetLeft={450} offsetTop={60}>
-                <b>Een titel met informatie.</b> De meeste webshops gebruiken een productnummer in de titel boven een product. In het productoverzicht helpt een beschrijvende titel met het geven van een richting om zo tot een keuze te komen. Het is wel belangrijk dat het productnummer zichtbaar blijft, want via dit nummer kan men online, buiten de webshop om, naar meer informatie of naar recensies zoeken.
-            </Tooltip>
             <Product 
                 title="Bosch voor lage energiekosten, stil en snel" 
                 img="/images/wasmachine-2.png"
@@ -64,7 +62,9 @@ import Product from "../Product.svelte";
                 energielabel="A"
                 prijs={939}
             />
-            
+            <Tooltip offsetLeft={400} offsetTop={40}>
+                <b>Een titel met informatie.</b> De meeste webshops gebruiken een productnummer in de titel boven een product. In het productoverzicht helpt een beschrijvende titel met het geven van een richting om zo tot een keuze te komen. Het is wel belangrijk dat het productnummer zichtbaar blijft, want via dit nummer kan men online, buiten de webshop om, naar meer informatie of naar recensies zoeken.
+            </Tooltip>
             <Product 
                 title="Samsung zuinig, stil met stoomfunctie" 
                 img="/images/wasmachine-3.png"
@@ -133,13 +133,13 @@ import Product from "../Product.svelte";
 
     <!-- Pagination -->
     <ul class="pagination">
-        <li class="btn" style="margin-right: .5rem"><i class="ri-arrow-left-s-line"></i>Vorige</li>
+        <li class="btn" style="margin-right: .5rem"><i class="ri-arrow-left-s-line"></i><span>Vorige</span></li>
         <li class="btn btn-primary">1</li>
         <li class="btn btn-hover">2</li>
         <li class="btn btn-hover">3</li>
         <li class="btn btn-hover">4</li>
         <li class="btn btn-hover">5</li>
-        <li class="btn" style="margin-left: .5rem">Volgende<i class="ri-arrow-right-s-line"></i></li>
+        <li class="btn" style="margin-left: .5rem"><span>Volgende</span><i class="ri-arrow-right-s-line"></i></li>
     </ul>
 
 </div>
@@ -166,6 +166,11 @@ import Product from "../Product.svelte";
             height: 1.5rem;
             padding: .1rem .5rem;
             cursor: pointer;
+        }
+
+        span {
+            display: inline-block;
+            transform: translateY(-.1rem);
         }
 
 

@@ -12,6 +12,8 @@ import { shoppingCartFull } from "$lib/stores";
     export let energielabel = "A";
     export let prijs = 0;
     export let onzeKeuze = false;
+
+    export let showTooltip = false;
 </script>
 
 <div class="product">
@@ -42,9 +44,11 @@ import { shoppingCartFull } from "$lib/stores";
                     producten die je graag met elkaar wil
                     vergelijken. Er verschijnt een nieuw venster met de gekozen producten naast elkaar.
                 </Explainer>
-                <Tooltip offsetLeft={40} offsetTop={14}>
-                    <b>Vergelijken.</b> Oudere gebruikers nemen de tijd om zich te oriënteren, meerder producten met elkaar kunnen vergelijken in een oogopslag helpt hen een goede keuze te kunnen maken.
-                </Tooltip>
+                {#if showTooltip}
+                    <Tooltip offsetLeft={40} offsetTop={14}>
+                        <b>Vergelijken.</b> Oudere gebruikers nemen de tijd om zich te oriënteren, meerder producten met elkaar kunnen vergelijken in een oogopslag helpt hen een goede keuze te kunnen maken.
+                    </Tooltip>
+                {/if}
             </div>
         </div>
         <div class="column">
@@ -56,7 +60,7 @@ import { shoppingCartFull } from "$lib/stores";
             </p>
         </div>
         <div class="column">
-            <h5>€{prijs},-</h5>
+            <h4>€{prijs},-</h4>
             <a href="/products/wasmachines/samsung" class="btn">Meer informatie</a>
             <a href="/shopping-cart" class="btn btn-primary" on:click={() => shoppingCartFull.set(true)}>
                 <i class="ri-shopping-basket-2-fill"></i>
@@ -72,17 +76,22 @@ import { shoppingCartFull } from "$lib/stores";
 <style lang="scss">
     .product {
         position: relative;
-        margin: 2rem 0;
+        margin: 1rem 0;
     }
 
     .product-image {
         width: 100%;
-        height: 220px;
+        height: 200px;
         object-fit: contain;
     }
 
     h3 {
         margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: .7rem;
+        margin: .7rem 0;
     }
 
     .onze-keuze {
