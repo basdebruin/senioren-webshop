@@ -31,25 +31,25 @@
                 <h3>Wasmachines</h3>
             </a>
         </li>
-        <li class="column">
+        <li class="column tooltip">
             <a href="products/wasmachines" class="btn">
                 <img src="/images/wasdrogers.png" alt="">
                 <h3>wasdrogers</h3>
             </a>
         </li>
-        <li class="column">
+        <li class="column tooltip">
             <a href="products/wasmachines" class="btn">
                 <img src="/images/koelkasten.png" alt="">
                 <h3>koelkasten</h3>
             </a>
         </li>
-        <li class="column">
+        <li class="column tooltip">
             <a href="products/wasmachines" class="btn">
                 <img src="/images/vriezers.png" alt="">
                 <h3>vriezers</h3>
             </a>
         </li>
-        <li class="column">
+        <li class="column tooltip">
             <a href="products/wasmachines" class="btn">
                 <img src="/images/vaatwassers.png" alt="">
                 <h3>vaatwassers</h3>
@@ -58,31 +58,31 @@
     </ul>
 
     <ul class="columns products">
-        <li class="column">
+        <li class="column tooltip">
             <a href="products/wasmachines" class="btn">
                 <img src="/images/smartphones.png" alt="">
                 <h3>smartphones</h3>
             </a>
         </li>
-        <li class="column">
+        <li class="column tooltip">
             <a href="products/wasmachines" class="btn">
                 <img src="/images/tablets.png" alt="">
                 <h3>tablets</h3>
             </a>
         </li>
-        <li class="column">
+        <li class="column tooltip">
             <a href="products/wasmachines" class="btn">
                 <img src="/images/monitors.png" alt="">
                 <h3>monitors</h3>
             </a>
         </li>
-        <li class="column">
+        <li class="column tooltip">
             <a href="products/wasmachines" class="btn">
                 <img src="/images/laptops.png" alt="">
                 <h3>laptops</h3>
             </a>
         </li>
-        <li class="column">
+        <li class="column tooltip">
             <a href="products/wasmachines" class="btn">
                 <img src="/images/waterkokers.png" alt="">
                 <h3>waterkokers</h3>
@@ -226,6 +226,17 @@
                 h3 {
                     font-size: 1rem;
                 }
+            }
+
+            &.tooltip::after {
+                display: block;
+                content: "Alle knoppen leiden naar de wasmachine. \A De wasmachine dient als voorbeeld";
+                white-space: pre;
+                text-wrap: initial;
+                text-align: center;
+                width: fit-content;
+                background-color: var(--primary-color);
+                bottom: -10%;
             }
         }
     }
