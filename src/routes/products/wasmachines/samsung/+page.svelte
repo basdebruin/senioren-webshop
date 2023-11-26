@@ -33,7 +33,7 @@ import Tooltip from "$lib/Tooltip/Tooltip.svelte";
     <Tooltip>
         <b>Een titel met informatie.</b> De meeste webshops gebruiken een productnummer in de titel boven een product. In het productoverzicht helpt een beschrijvende titel met het geven van een richting om zo tot een keuze te komen. Het is wel belangrijk dat het productnummer zichtbaar blijft, want via dit nummer kan men online, buiten de webshop om, naar meer informatie of naar recensies zoeken.
     </Tooltip>
-    <h2>Samsung superzuinig met automatisch wasmiddeldosering</h2>
+    <h1>Samsung superzuinig met automatisch wasmiddeldosering</h1>
     <h5>Typenummer:  WW90T534AAW</h5>
 
     <div class="columns">

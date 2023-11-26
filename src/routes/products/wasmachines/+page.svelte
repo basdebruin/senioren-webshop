@@ -18,13 +18,9 @@ import Product from "../Product.svelte";
         <li class="breadcrumb-item"> 
             <a href="#wasmachines">Wasmachines</a> 
         </li>
-        <li class="breadcrumb-item"></li>
-        <li class="breadcrumb-item"></li>
-        <li class="breadcrumb-item">
-            <Tooltip>
-                <b>Voor orientatie.</b> “Hoe kom ik terug” is een veelgehoorde vraag in dit onderzoek. Het zoekraken is een heikel punt bij veel oudere bezoekers. Een 'terug' knop helpt enorm. Een kruimelpad met daarin de stappen waar de gebruiker nu zit is ook handig.
-            </Tooltip>
-        </li>
+        <Tooltip offsetLeft={250}>
+            <b>Voor orientatie.</b> “Hoe kom ik terug” is een veelgehoorde vraag in dit onderzoek. Het zoekraken is een heikel punt bij veel oudere bezoekers. Een 'terug' knop helpt enorm. Een kruimelpad met daarin de stappen waar de gebruiker nu zit is ook handig.
+        </Tooltip>
     </ul>
 
     <div class="spacer"></div>
@@ -46,7 +42,7 @@ import Product from "../Product.svelte";
             </p>
             
             <!-- Products -->
-            <Tooltip>
+            <Tooltip offsetLeft={-20} offsetTop={45}>
                 <b>Een titel met informatie.</b> De meeste webshops gebruiken een productnummer in de titel boven een product. In het productoverzicht helpt een beschrijvende titel met het geven van een richting om zo tot een keuze te komen. Het is wel belangrijk dat het productnummer zichtbaar blijft, want via dit nummer kan men online, buiten de webshop om, naar meer informatie of naar recensies zoeken.
             </Tooltip>
             <Product 
