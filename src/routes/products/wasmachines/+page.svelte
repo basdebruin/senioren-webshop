@@ -148,6 +148,8 @@ import Product from "../Product.svelte";
     .filters > img {
         cursor: not-allowed;
 
+        margin-top: -2rem;
+
         transition: all .1s;
         &:hover {
             opacity: .5;
