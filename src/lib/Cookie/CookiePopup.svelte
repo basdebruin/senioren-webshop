@@ -42,13 +42,13 @@
                     <p>Selecteer hieronder welke cookies je toe wilt staan. Houd er rekening mee dat bij het uitsluiten van cookies sommige functionaliteiten van de website niet langer kunnen werken.</p>
                     <div class="checkboxes">
                         <label class="checkbox">
-                            <input type="radio" name="cookie"> Functionaliteiten
+                            <input type="checkbox"> Functionaliteiten
                         </label>
                         <label class="checkbox">
-                            <input type="radio" name="cookie"> Marketing
+                            <input type="checkbox"> Marketing
                         </label>
                         <label class="checkbox">
-                            <input type="radio" name="cookie"> Derde partijen
+                            <input type="checkbox"> Derde partijen
                         </label>
                     </div>
                     <a href="#close" class="link">Informatie over gegevensbescherming</a>
