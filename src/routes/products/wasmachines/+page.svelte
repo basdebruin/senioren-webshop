@@ -28,18 +28,12 @@ import Product from "../Product.svelte";
     <div class="columns">
         <!-- Filters -->
         <div class="column col-3 filters">
-            <Tooltip offsetTop={30}>
-                <b>Vergelijken:</b> 3 producten boven de 'vouw'. De oudere gebruiker wil makkelijk kunnen vergelijken, door drie producten in beeld te hebben met de belangrijkste ken-merken kan de bezoeker al een voorverkenning doen zonder naar 'meer informatie' te gaan. Sommige deelnemers gingen vanaf hier meteen door naar 'bestel nu'
-            </Tooltip>
             <img src="/filter-lijst.svg" alt="Hier zou een lijst met filters komen, waar je kan sorteren op gewicht, geluidsniveau, prijs etcetera">
         </div>
         <div class="column col-8">
 
             <!-- Title -->
             <h1>Wasmachines</h1>
-            <Tooltip offsetLeft={200} offsetTop={-12}>
-                <b>Een titel met informatie.</b> De meeste webshops gebruiken een productnummer in de titel boven een product. In het productoverzicht helpt een beschrijvende titel met het geven van een richting om zo tot een keuze te komen. Het is wel belangrijk dat het productnummer zichtbaar blijft, want via dit nummer kan men online, buiten de webshop om, naar meer informatie of naar recensies zoeken.
-            </Tooltip>
             <p>
                 Je kunt de wasmachine die voor jou geschikt is makkelijker vinden door je voorkeuren hier links aan te geven. Na het toepassen van de voorkeuren zie je de wasmachines die aan jouw wensen voldoen.
             </p>
@@ -58,6 +52,9 @@ import Product from "../Product.svelte";
                 onzeKeuze={true}
                 prijs={699}
             />
+            <Tooltip offsetLeft={450} offsetTop={60}>
+                <b>Een titel met informatie.</b> De meeste webshops gebruiken een productnummer in de titel boven een product. In het productoverzicht helpt een beschrijvende titel met het geven van een richting om zo tot een keuze te komen. Het is wel belangrijk dat het productnummer zichtbaar blijft, want via dit nummer kan men online, buiten de webshop om, naar meer informatie of naar recensies zoeken.
+            </Tooltip>
             <Product 
                 title="Bosch voor lage energiekosten, stil en snel" 
                 img="/images/wasmachine-2.png"
@@ -67,6 +64,7 @@ import Product from "../Product.svelte";
                 energielabel="A"
                 prijs={939}
             />
+            
             <Product 
                 title="Samsung zuinig, stil met stoomfunctie" 
                 img="/images/wasmachine-3.png"
