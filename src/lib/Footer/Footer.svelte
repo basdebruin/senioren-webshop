@@ -1,18 +1,10 @@
 <script>
-    import { navigating } from "$app/stores";
+    import { page } from "$app/stores";
     import Tooltip from "$lib/Tooltip/Tooltip.svelte";
     import { onMount } from "svelte";
 
     let isHomepage = true;
-
-    let fn = () => {
-        isHomepage = (window.location.pathname == "/home");
-        console.log(window.location.pathname);
-    }
-    onMount(() => {
-        fn();
-        window.addEventListener("click", fn);
-    });
+    $: isHomepage = ($page.url.pathname == "/home");
 
 </script>
 <footer>
