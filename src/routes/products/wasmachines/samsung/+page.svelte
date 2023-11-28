@@ -92,10 +92,10 @@ import Tooltip from "$lib/Tooltip/Tooltip.svelte";
     </div>
 
     <!-- Specs -->
-    <Tooltip offsetTop={5}>
+    <h2 style="margin-bottom: 1rem">Specificaties</h2>
+    <Tooltip offsetLeft={175} offsetTop={-20}>
         <b>Gedoseerde informatie.</b> Vaak zijn de specificaties heel uitvoerig en dat vereist vaak veel scrollen, waardoor een pagina onoverzichtelijk is voor de oudere bezoeker. Veel informatie kun je door middel van tabbladen gecontroleerd en gedoseerd weergeven.
     </Tooltip>
-    <h2 style="margin-bottom: 1rem">Specificaties</h2>
     <Specs/>
 
 </div>
@@ -107,10 +107,10 @@ import Tooltip from "$lib/Tooltip/Tooltip.svelte";
 
 <div class="container grid-xl reviews">
     <!-- Reviews -->
-    <Tooltip>
+    <h3>Referenties</h3>
+    <Tooltip offsetLeft={150} offsetTop={-8}>
         <b>Recensies.</b> De mening van andere kopers doet ertoe (al zijn er ouderen die recensies juist wantrouwen, want 'die schrijven ze vast zelf'). Regelmatig werd er ook nog op externe reviewsites gekeken. Plaats bovenin de plus- en minpunten en daarna het de recensie opdat men sneller de belangrijke info tot zich kan nemen.
     </Tooltip>
-    <h3>Referenties</h3>
 
     <Reviews />
 
