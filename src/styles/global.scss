@@ -38,6 +38,11 @@ $accessibility-blue: #2653E8;
     padding: .5rem 1rem;
     height: auto;
     color: $dark-color;
+
+    display: inline-flex;
+    align-items: center;
+    gap: .2rem;
+    justify-content: center;
 }
 .btn {
     font-weight: 600;
@@ -62,7 +67,7 @@ i {
     }
 }
 .btn i, input i {
-    transform: translateY(.07em);
+    //transform: translateY(.1em);
 }
 
 .btn.btn-primary {
