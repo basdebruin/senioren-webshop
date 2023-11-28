@@ -3,7 +3,7 @@
 
     let tabData = [
         {
-            title: "korte specificaties",
+            title: "Korte specificaties",
             data: [
                 ["Artikelnummer", "87037"],
                 ["Fabrikantcode", "WW90T524AAW/S2"],
@@ -14,7 +14,7 @@
             ]
         },
         {
-            title: "algemene kenmerken",
+            title: "Algemene kenmerken",
             data: [
                 ["Type wasmachine", "Voorlader"],
                 ["Vulgewicht", "9 kg"],
@@ -25,7 +25,7 @@
             ]
         },
         {
-            title: "functionele kenmerken",
+            title: "Functionele kenmerken",
             data: [
                 ["Gebruiksgemak", "Automatisch uitschakelen, Automatisch wasmiddeldosering, bediening via app, stoomfunctie"],
                 ["Tussentijds toevoegen", "Nee"],
@@ -36,7 +36,7 @@
             ]
         },
         {
-            title: "wasfuncties",
+            title: "Wasfuncties",
             data: [
                 ["Waskwaliteit", "Topklasse"],
                 ["Kleding beschermende tromer", "Ja"],
@@ -47,7 +47,7 @@
             ]
         },
         {
-            title: "water en energie",
+            title: "Water en Energie",
             data: [
                 ["Energieklass", "A"],
                 ["Energiebesparing over levensduur", "330 euro"],
@@ -58,7 +58,7 @@
             ]
         },
         {
-            title: "fysieke eigenschappen",
+            title: "Fysieke eigenschappen",
             data: [
                 ["Diepte", "63,5 cm"],
                 ["Breedte", "60"],
@@ -105,12 +105,20 @@
         .tab {
             margin: 0;
 
+            .tab-item:not(:last-child) {
+                border-right: solid 1px var(--primary-color);
+            }
+
             .active {
                 background-color: var(--primary-color);
+
                 a {
                     color: white !important;
+                    border: 2px solid var(--primary-color) !important;
+                    outline: none !important;
                 }
             }
+            
         }
 
         table {

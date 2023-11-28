@@ -46,7 +46,7 @@ import Tooltip from "$lib/Tooltip/Tooltip.svelte";
             </Tooltip>
         </div>
         <!-- Description -->
-        <div class="column col-6">
+        <div class="column col-6" style="max-width: 45%">
 
             <h3>
                 Omschrijving
@@ -92,6 +92,10 @@ import Tooltip from "$lib/Tooltip/Tooltip.svelte";
     </div>
 
     <!-- Specs -->
+    <Tooltip offsetTop={5}>
+        <b>Gedoseerde informatie.</b> Vaak zijn de specificaties heel uitvoerig en dat vereist vaak veel scrollen, waardoor een pagina onoverzichtelijk is voor de oudere bezoeker. Veel informatie kun je door middel van tabbladen gecontroleerd en gedoseerd weergeven.
+    </Tooltip>
+    <h2 style="margin-bottom: 1rem">Specificaties</h2>
     <Specs/>
 
 </div>
