@@ -83,7 +83,7 @@ import { shoppingCartFull } from "$lib/stores";
 {/if}
 
 <!-- DEBUG Button -->
-{#if $shoppingCartFull==false}
+{#if !$shoppingCartFull}
     <button class="btn btn-small add-product tooltip tooltip-left" data-tooltip="Vul winkelwagen" on:click={() => (shoppingCartFull.set(true))}><i class="ri-add-circle-fill"></i></button>
 {/if}
 
