@@ -1,6 +1,7 @@
 <script>
     import Tooltip from "$lib/Tooltip/Tooltip.svelte";
     import Product from "../Product.svelte";
+    import Filters from "./Filters.svelte";
 
 </script>
 <div class="spacer"></div>
@@ -28,7 +29,7 @@
     <div class="columns">
         <!-- Filters -->
         <div class="column col-3 filters">
-            <img src="/filter-lijst.svg" alt="Hier zou een lijst met filters komen, waar je kan sorteren op gewicht, geluidsniveau, prijs etcetera">
+            <Filters />
         </div>
         <div class="column col-8">
 
