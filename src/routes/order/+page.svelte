@@ -26,7 +26,7 @@
     <!-- Navigation -->
     <div class="order-navigation">
         <!-- Steps -->
-        <a href="/shopping-cart" class="btn btn-primary"><i class="ri-arrow-left-s-line"></i> Terug</a>
+        <a href="/shopping-cart" class="btn btn-primary" style="height: 2.5rem"><i class="ri-arrow-left-s-line"></i> Terug</a>
         <ul class="step">
             {#each steps as step, index}
                 <li class="step-item" class:active={stepIndex >= index}>

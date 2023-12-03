@@ -147,6 +147,7 @@
         display: flex;
         justify-content: stretch;
         gap: .5rem;
+        height: 2.5rem;
         input {
             width: 100%;
         }
