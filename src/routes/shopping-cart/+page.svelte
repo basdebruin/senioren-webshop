@@ -75,13 +75,18 @@ import { shoppingCartFull } from "$lib/stores";
             <a href="/products/wasmachines" class="btn">Verder winkelen</a>
             <a href="/order" class="btn btn-primary">Ga door met bestellen</a>
         </div>
+
+
+        <p style="margin: 2rem 0">Hulp nodig met bestellen? Bel ons op 0316-123456</p>
     </div>
+
 {/if}
 
 <!-- DEBUG Button -->
 {#if $shoppingCartFull==false}
     <button class="btn btn-small add-product tooltip tooltip-left" data-tooltip="Vul winkelwagen" on:click={() => (shoppingCartFull.set(true))}><i class="ri-add-circle-fill"></i></button>
 {/if}
+
 
 <style lang="scss">
     article {
