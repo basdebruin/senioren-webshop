@@ -60,7 +60,7 @@ import { shoppingCartFull } from "$lib/stores";
             </p>
         </div>
         <div class="column">
-            <h4>€{prijs},-</h4>
+            <h3 style="font-size: 1.25rem">€ {prijs},-</h3>
             <a href="/products/wasmachines/samsung" class="btn">Meer informatie</a>
             <a href="/shopping-cart" class="btn btn-primary" on:click={() => shoppingCartFull.set(true)}>
                 <i class="ri-shopping-basket-2-fill"></i>
