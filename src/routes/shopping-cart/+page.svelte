@@ -65,7 +65,7 @@ import { shoppingCartFull } from "$lib/stores";
                         <li>Levertijd 2-3 weken</li>
                     </ul>
 
-                    <span class="price">Totaalbedrag (incl BTW) <h4>€699,-</h4></span>
+                    <span class="price">Totaalbedrag (incl BTW) <h3>€ 699,-</h3></span>
 
                     <button class="btn btn-small" on:click={() => (shoppingCartFull.set(false))}><i class="ri-delete-bin-line"></i> Verwijderen</button>
                 </div>
@@ -112,11 +112,16 @@ import { shoppingCartFull } from "$lib/stores";
         .price {
             display: flex;
             gap: .5rem;
+            align-items: baseline;
             font-weight: bold;
             * { 
                 color: var(--dark-color);
             }
             margin-top: 1rem;
+
+            h3 {
+                font-size: 1.25rem;
+            }
         }
     }
 

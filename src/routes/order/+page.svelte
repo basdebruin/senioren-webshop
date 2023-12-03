@@ -68,7 +68,7 @@
                         <img src="/images/wasmachine-1.png" alt="wasmachine samsung" style="height: 5rem">
                     </div>
                     <div class="column">
-                        <p><b>Totaalbedrag (incl BTW) €699,-</b></p>
+                        <span class="price">Totaalbedrag (incl BTW) <h3>€ 699,-</h3></span>
                         <a href="/shopping-cart" class="btn btn-small">Wijzig bestelling</a>
                         <Tooltip offsetLeft={200} offsetTop={-5}>
                             <b>Bestelling zichtbaar.</b> Laat in het hele bestelproces zien welk product er besteld wordt en geef de optie dat de bestelling nog aan te passen is.
@@ -222,6 +222,22 @@
     .step .step-item.active a::before {
         background: var(--primary-color) !important;
         color: white;
+    }
+
+    // price
+    .price {
+        display: flex;
+        gap: .5rem;
+        align-items: baseline;
+        font-weight: bold;
+        * { 
+            color: var(--dark-color);
+        }
+        margin-top: 1rem;
+
+        h3 {
+            font-size: 1.25rem;
+        }
     }
 
 
