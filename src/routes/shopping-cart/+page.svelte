@@ -23,10 +23,19 @@ import { shoppingCartFull } from "$lib/stores";
 {#if $shoppingCartFull}
     <div class="spacer" style="height: 100px"></div>
     <div class="container grid-lg">
-        <h1>Winkelmandje</h1>
+        <a href="/home" class="btn btn-primary">
+            <i class="ri-arrow-left-s-line"></i> 
+            Terug
+        </a>
+        <div class="spacer" style="height: 2rem"></div>
+        <h1>Je bestelling</h1>
+        <Tooltip offsetLeft={180} offsetTop={-14}>
+            <b>Jouw bestelling.</b> Regelmatig is deze fase van bestellen voor webshops een moment om de bezoeker te prikkelen voor andere nevenartikelen: "wat anderen kochten" of "heb je ook hier aan gedacht?". Dit kan afleidend zijn en soms ook verwarrend en meermaals hebben wij de deelnemers zien switchen om daarna niet meer terug te komen. En dan nog een tip.
+        </Tooltip>
+
         <div class="product">
-            <h2 class="h3">Samsung superzuinig met automatisch wasmiddeldosering</h2>
-            <p><b>Typenummer: WW90T534AAW</b></p>
+            <h2>Samsung superzuinig met automatisch wasmiddeldosering</h2>
+            <h3>Typenummer: WW90T534AAW</h3>
             <div class="columns">
                 <div class="column img-col">
                     <img src="/images/wasmachines.png" alt="">
@@ -43,7 +52,7 @@ import { shoppingCartFull } from "$lib/stores";
                 </div>
                 <div class="column">
                     <h4 class="h5">Berzorging en service</h4>
-                    <Tooltip offsetLeft={235} offsetTop={-10} isLeft={true}>
+                    <Tooltip offsetLeft={210} offsetTop={-5} isLeft={true}>
                         <b>Beantwoord de vragen.</b> Zodra het product in het mandje zit, begint men zich af te vragen hoe het zit met de service en de bestelling. Dit is hét moment om dit soort informatie te tonen. Op die manier voorkom je dat de bezoeker ergens anders op de site moet gaan zoeken, en het product vergeet of niet meer terug kan vinden.
                         <br><br>
                         <b>Product verwijderen. </b> In het onderzoek gaven de oudere deelnemers regelmatig aan, dat als ze het product niet wilden hebben, ze het product uit hun mandje wilden halen omdat ze het idee hadden dat ze anders misschien alsnog ergens aan vast zouden zitten. Voeg een knop 'verwijderen' toe, dat stelt de klant gerust.
@@ -58,7 +67,7 @@ import { shoppingCartFull } from "$lib/stores";
 
                     <span class="price">Totaalbedrag (incl BTW) <h4>€699,-</h4></span>
 
-                    <button class="btn btn-small" on:click={() => (shoppingCartFull.set(false))}><i class="ri-delete-bin-line"></i> Delete</button>
+                    <button class="btn btn-small" on:click={() => (shoppingCartFull.set(false))}><i class="ri-delete-bin-line"></i> Verwijderen</button>
                 </div>
             </div>
         </div>
