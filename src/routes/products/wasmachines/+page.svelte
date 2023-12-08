@@ -35,7 +35,7 @@
 
             <!-- Title -->
             <h1>Wasmachines</h1>
-            <p>
+            <p style="max-width: 34em">
                 Je kunt de wasmachine die voor jou geschikt is makkelijker vinden door je voorkeuren hier links aan te geven. Na het toepassen van de voorkeuren zie je de wasmachines die aan jouw wensen voldoen.
             </p>
             
