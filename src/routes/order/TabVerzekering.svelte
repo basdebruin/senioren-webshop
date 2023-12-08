@@ -29,7 +29,7 @@
     </label>
     <div class="spacer" style="height: 1rem"></div>
     <h3 class="h5">Aanvullende verzekering</h3>
-    <p>
+    <p style="max-width: 30em">
         Wil je een aanvullende verzekering van € 149,- eenmalig naast de 2 jaar garantie?
         <Explainer title="Aanvullende verzekering">
             De fabrieksgarantie geldt alleen in het geval het defect/gebrek niet door uzelf veroorzaakt is. De aanvullende verzekering biedt ook garantie bij de gevolgen van dagelijkse ongelukjes, zoals vallen, waterschade, vocht, brand, kortsluiting of overspanning. Zo mogelijk repareren wij uw apparaat kosteloos. Is reparatie niet meer mogelijk, dan vindt in de eerste twee jaar vervanging plaats op basis van gelijke specificaties.

@@ -33,7 +33,7 @@
                     <a data-index={index+1} href="#step-{index}" on:click={() => stepIndex = index}>{step.name}</a>
                 </li>
             {/each}
-            <Tooltip isLeft={true} offsetTop={15}>
+            <Tooltip isLeft={true} offsetTop={15} offsetLeft={-30}>
                 <b>Overzicht.</b> Het zijn vaak best wat stappen die een koper moet doorlopen. Het is fijn dat deze stappen inzichtelijk zijn.
             </Tooltip>
         </ul>
@@ -157,6 +157,10 @@
         gap: 4rem;
     }
 
+    :global(.order-page h2) {
+        margin-bottom: 1rem;
+    }
+
     .product-overview {
 
         .product {
@@ -210,11 +214,14 @@
     // numbers
     .step .step-item.active a {
         color: var(--primary-color);
+        font-weight: 600;
     }
     .step .step-item a::before {
         width: 1.5rem;
         height: 1.5rem;
         top: -.6rem;
+        padding-top: .05rem;
+        font-weight: 600;
         content: attr(data-index);
         background: white !important;
         border: solid 1.5px var(--primary-color);
