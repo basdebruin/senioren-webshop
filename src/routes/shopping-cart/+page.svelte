@@ -13,7 +13,7 @@ import { shoppingCartFull } from "$lib/stores";
         <h1 class="empty-title">Winkelmandje</h1>
         <p class="empty-subtitle">Je winkelmandje is nog leeg</p>
         <div class="empty-action">
-            <a href="/home" class="btn btn-primary">
+            <a href="/products/wasmachines" class="btn btn-primary">
                 <i class="ri-arrow-left-s-line"></i> 
                 Terug
             </a>
@@ -23,7 +23,7 @@ import { shoppingCartFull } from "$lib/stores";
 {#if $shoppingCartFull}
     <div class="spacer" style="height: 100px"></div>
     <div class="container grid-lg">
-        <a href="/home" class="btn btn-primary">
+        <a href="/products/wasmachines" class="btn btn-primary">
             <i class="ri-arrow-left-s-line"></i> 
             Terug
         </a>
