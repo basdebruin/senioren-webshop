@@ -3,6 +3,7 @@
     import Product from "../Product.svelte";
     import Filters from "./Filters.svelte";
 
+    let filterApplied = false;
 </script>
 <div class="spacer"></div>
 
@@ -29,7 +30,7 @@
     <div class="columns">
         <!-- Filters -->
         <div class="column col-3 filters">
-            <Filters />
+            <Filters bind:filterApplied={filterApplied}/>
         </div>
         <div class="column col-8">
 
@@ -54,15 +55,17 @@
                 prijs={699}
                 showTooltip={true}
             />
-            <Product 
-                title="Bosch voor lage energiekosten, stil en snel" 
-                img="/images/wasmachine-2.png"
-                vulgewicht="9 kg"
-                toerental="1400"
-                geluidsniveau="stil (71dB)"
-                energielabel="A"
-                prijs={939}
-            />
+            {#if !filterApplied}
+                <Product 
+                    title="Bosch voor lage energiekosten, stil en snel" 
+                    img="/images/wasmachine-2.png"
+                    vulgewicht="9 kg"
+                    toerental="1400"
+                    geluidsniveau="stil (71dB)"
+                    energielabel="A"
+                    prijs={939}
+                />
+            {/if}
             <Tooltip offsetLeft={400} offsetTop={40}>
                 <b>Een titel met informatie.</b> De meeste webshops gebruiken een productnummer in de titel boven een product. In het productoverzicht helpt een beschrijvende titel met het geven van een richting om zo tot een keuze te komen. Het is wel belangrijk dat het productnummer zichtbaar blijft, want via dit nummer kan men online, buiten de webshop om, naar meer informatie of naar recensies zoeken.
             </Tooltip>
@@ -75,15 +78,17 @@
                 energielabel="A"
                 prijs={629}
             />
-            <Product 
-                title="Haier heel stil, snel met WIFI" 
-                img="/images/wasmachine-4.png"
-                vulgewicht="8 kg"
-                toerental="1500"
-                geluidsniveau="Heel stil (69dB)"
-                energielabel="B"
-                prijs={629}
-            />
+            {#if !filterApplied}  
+                <Product 
+                    title="Haier heel stil, snel met WIFI" 
+                    img="/images/wasmachine-4.png"
+                    vulgewicht="8 kg"
+                    toerental="1500"
+                    geluidsniveau="Heel stil (69dB)"
+                    energielabel="B"
+                    prijs={629}
+                />
+            {/if}
             <Product 
                 title="Samsung, stil en wasgoed toevoegen tijdens wasbeurt" 
                 img="/images/wasmachine-5.png"
@@ -93,42 +98,44 @@
                 energielabel="A"
                 prijs={749}
             />
-            <Product 
-                title="AEG, stil met stoomfunctie" 
-                img="/images/wasmachine-6.png"
-                vulgewicht="8 kg"
-                toerental="1600"
-                geluidsniveau="stil (76dB)"
-                energielabel="B"
-                prijs={969}
-            />
-            <Product 
-                title="AEG voor gemiddelde energiekosten, stil en snel" 
-                img="/images/wasmachine-7.png"
-                vulgewicht="9 kg"
-                toerental="1500"
-                geluidsniveau="stil (76dB)"
-                energielabel="B"
-                prijs={849}
-            />
-            <Product 
-                title="Miele zuinig, stil met strijkfunctie" 
-                img="/images/wasmachine-8.png"
-                vulgewicht="8 kg"
-                toerental="1500"
-                geluidsniveau="stil (72dB)"
-                energielabel="B"
-                prijs={879}
-            />
-            <Product 
-                title="Miele waterbesparend, zuinig met WIFI" 
-                img="/images/wasmachine-9.png"
-                vulgewicht="8 kg"
-                toerental="1500"
-                geluidsniveau="Heel stil (69dB)"
-                energielabel="B"
-                prijs={1799}
-            />
+            {#if !filterApplied}    
+                <Product 
+                    title="AEG, stil met stoomfunctie" 
+                    img="/images/wasmachine-6.png"
+                    vulgewicht="8 kg"
+                    toerental="1600"
+                    geluidsniveau="stil (76dB)"
+                    energielabel="B"
+                    prijs={969}
+                />
+                <Product 
+                    title="AEG voor gemiddelde energiekosten, stil en snel" 
+                    img="/images/wasmachine-7.png"
+                    vulgewicht="9 kg"
+                    toerental="1500"
+                    geluidsniveau="stil (76dB)"
+                    energielabel="B"
+                    prijs={849}
+                />
+                <Product 
+                    title="Miele zuinig, stil met strijkfunctie" 
+                    img="/images/wasmachine-8.png"
+                    vulgewicht="8 kg"
+                    toerental="1500"
+                    geluidsniveau="stil (72dB)"
+                    energielabel="B"
+                    prijs={879}
+                />
+                <Product 
+                    title="Miele waterbesparend, zuinig met WIFI" 
+                    img="/images/wasmachine-9.png"
+                    vulgewicht="8 kg"
+                    toerental="1500"
+                    geluidsniveau="Heel stil (69dB)"
+                    energielabel="B"
+                    prijs={1799}
+                />
+            {/if}
         </div>
     </div>
 
