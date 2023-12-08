@@ -146,17 +146,6 @@
 </div>
 
 <style lang="scss">
-    .filters > img {
-        cursor: not-allowed;
-
-        margin-top: -2rem;
-
-        transition: all .1s;
-        &:hover {
-            opacity: .5;
-        }
-    }
-
     .pagination {
         margin: 2rem auto;
         width: fit-content;
