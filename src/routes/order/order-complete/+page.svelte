@@ -5,7 +5,7 @@
 <div class="spacer" style="height: 100px"></div>
 
 <main class="container grid-xl">
-    <a href="/" class="btn btn-primary"><i class="ri-arrow-left-s-line"></i>Beginpagina</a>
+    <a href="/home" class="btn btn-primary"><i class="ri-arrow-left-s-line"></i>Beginpagina</a>
     <div class="spacer" style="height: 30px"></div>
 
     <div class="columns">
