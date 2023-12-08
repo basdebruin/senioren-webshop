@@ -23,8 +23,7 @@
     <div class="modal-container">
         <div class="modal-title">
             <Tooltip>
-                <b>Cookie Pop-ups. </b>Lorem ipsum dolor sit amet consectetur. Sed sit nibh leo urna venenatis viverra integer cursus at. Accumsan mauris vehicula dui id. Sed suspendisse nibh lectus arcu mauris mollis sit at nulla. At nulla non commodo imperdiet vulputate leo elit. Vestibulum posuere vestibulum viverra eu. Morbi praesent ultrices habitant nunc est in interdum scelerisque. Aliquet suscipit netus elementum elementum eu ullamcorper nec. Interdum orci nullam posuere ut quam in. Ullamcorper egestas viverra purus gravida commodo.
-                Aliquet cras in eu ultricies mattis. Nibh sit bibendum aliquet risus sem quam facilisis turpis. Adipiscing ridiculus a nulla interdum ullamcorper justo morbi. 
+                <b>Cookie Pop-ups. </b>Ouderen zijn veelal beducht voor Cookies en willen vaak de instellingen van de Cookies aanpassen. Leg duidelijk uit wat welke optie betekent of doet.  Zorg ervoor dat de interactie knoppen goed zichtbaar zijn. 
             </Tooltip>
             <h2>Cookie instellingen</h2>
         </div>
