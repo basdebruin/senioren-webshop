@@ -135,13 +135,18 @@
             <div class="flex-row">
                 <Input 
                 label="Wachtwoord"
-                    clickedText={accountPasswordShown ? "wachtwoord123" : "•••••••••••••"}
+                    clickedText={accountPasswordShown ? "Wachtwoord123" : "•••••••••••••"}
                     width="30rem"/>
                 <button class="show-password" on:click={() => accountPasswordShown=!accountPasswordShown}>
                     <i class=  {accountPasswordShown ? "ri-eye-off-fill" : "ri-eye-fill"}></i>
                     Wachtwoord {accountPasswordShown ? "verbergen" : "tonen"}
                 </button>
+                <Tooltip offsetLeft={30} offsetTop={60}>
+                    <b>Tonen wachtwoord.</b> Geef de optie om het wachtwoord te kunnen tonen. De kans op typefouten is aanwezig en dan is het wenselijk dat men kan terugzien of het wachtwoord goed is ingevoerd. Als er eisen zijn waaraan het wachtwoord moet voldoen, vermeldt die dan duidelijk, en op voorhand.
+                </Tooltip>
             </div>
+            <p>Het wachtwoord bestaat uit minimaal 8 karakters: <br> 
+                zowel cijfers als letters en tenminste 1 hoofdletter</p>
             <button class="btn btn-primary btn-bestellen" on:click={() => stepIndex++}>Ga door met bestellen</button>
         </div>
     {/if}
