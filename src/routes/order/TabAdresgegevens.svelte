@@ -3,6 +3,7 @@
     import Input from "./Input.svelte";
 
     let adressActive = false;
+    let nameActive = false;
 </script>
 
 
@@ -27,14 +28,17 @@
     <div class="flex-stretch">
         <Input 
             label="Voornaam"
-            clickedText="Naam"/>
+            clickedText="Naam"
+            bind:clicked={nameActive}/>
         <Input 
             label="Tussenv."
             clickedText="van"
-            width="60%"/>
+            width="60%"
+            bind:clicked={nameActive}/>
         <Input 
             label="Achternaam"
-            clickedText="Klant"/>
+            clickedText="Klant"
+            bind:clicked={nameActive}/>
     </div>
 
     <Tooltip offsetLeft={-20} offsetTop={55}>
@@ -73,7 +77,8 @@
             label="Emailadres"
             clickedText="mail@klantnl"
             clickedState="error"
-            bottomLabel="Er zit een fout in uw emailadres"/>
+            bottomLabel="Er zit een fout in uw emailadres"
+            bind:clicked={adressActive}/>
     </div>
     
     <Tooltip offsetLeft={-20} offsetTop={60}>
@@ -84,7 +89,8 @@
             label="Telefoonnummer"
             clickedText="06123456"
             clickedState="error"
-            bottomLabel="Er ontbreekt een cijfer uit uw telefoonnummer"/>
+            bottomLabel="Er ontbreekt een cijfer uit uw telefoonnummer"
+            bind:clicked={adressActive}/>
     </div>
 </div>
 
