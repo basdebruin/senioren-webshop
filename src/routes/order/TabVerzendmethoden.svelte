@@ -10,7 +10,7 @@
 </script>
 
 <div class="column">
-    <h2 class="h4">Verzendgegevens</h2>
+    <h2>Verzendgegevens</h2>
     <div class="verzendgegevens">
         <Tooltip offsetLeft={210} offsetTop={25}>
             <b>Kiezen wanneer en door wie.</b> Ouderen zijn druk, net zoals andere online gebruikers, dus wanneer ze zelf een bezorgmoment kunnen kiezen is dat fijn. Maak je gebruik van verschillende koeriersdiensten? Vermeldt dit erbij. Want uit het onderzoek bleek regelmatig dat oudere bezoekers zo hun voorkeuren voor de een of andere dienst hebben.

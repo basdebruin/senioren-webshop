@@ -3,7 +3,7 @@
 
 </script>
 <div class="column">
-    <h2 class="h4">Betaalmethoden
+    <h2>Betaalmethoden
         <Tooltip offsetLeft={-15}>
             <b>Betalen.</b> Betalen met iDEAL, met je creditcard en achteraf betalen: dit zijn veelgebruikte betaalmethoden. Maar niet iedereen maakt gebruik van internetbankieren, dus het is belangrijk om ook een overboeking als betaalmethode aan te bieden.
         </Tooltip>
@@ -42,7 +42,7 @@
             Ik heb mijn bestelling en gegevens gecontroleerd en ga akkoord met de <a href="#voorwaarden">algemene voorwaarden.</a>
         </p>
         <Tooltip offsetTop={40}>
-            <b>Controle.</b> Nog een laatste controlemoment. Kloppen alle gegevens? En klopt de bestelling met de verwachting? 
+            <b>Controle.</b> Nog een laatste controlemoment. Kloppen alle gegevens? En klopt de bestelling met de verwachting?
         </Tooltip>
     </label>
 </div>

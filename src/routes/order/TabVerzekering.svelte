@@ -4,8 +4,8 @@
 
 </script>
 <div class="column">
-    <h2 class="h4">Aansluiting en aanvullende verzekering</h2>
-    <h3 class="h5">Aansluiting</h3>
+    <h2>Aansluiting en aanvullende verzekering</h2>
+    <h3>Aansluiting</h3>
     <label class="checkbox">
         <input type="radio" name="aansluiting" checked>
         <p>
@@ -28,7 +28,7 @@
         </p>
     </label>
     <div class="spacer" style="height: 1rem"></div>
-    <h3 class="h5">Aanvullende verzekering</h3>
+    <h3>Aanvullende verzekering</h3>
     <p style="max-width: 30em">
         Wil je een aanvullende verzekering van € 149,- eenmalig naast de 2 jaar garantie?
         <Explainer title="Aanvullende verzekering">

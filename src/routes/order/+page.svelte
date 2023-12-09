@@ -26,7 +26,7 @@
     <!-- Navigation -->
     <div class="order-navigation">
         <!-- Steps -->
-        <a href="/shopping-cart" class="btn btn-primary" style="height: 2.5rem"><i class="ri-arrow-left-s-line"></i> Terug</a>
+        <a href="/shopping-cart" class="btn btn-primary" style="max-height: 2.4rem"><i class="ri-arrow-left-s-line"></i> Terug</a>
         <ul class="step">
             {#each steps as step, index}
                 <li class="step-item" class:active={stepIndex >= index}>
@@ -53,12 +53,12 @@
         <div class="column product-overview">
 
             {#if stepIndex==1}
-                <h2 class="h4">Ik ben al klant</h2>
+                <h2>Ik ben al klant</h2>
                 <button class="btn btn-primary">Inloggen</button>
                 <div class="spacer"></div>
             {/if}
 
-            <h2 class="h4">Jouw bestelling (winkelmandje)</h2>
+            <h2>Jouw bestelling (winkelmandje)</h2>
             <div class="product">
                 <h3 class="h5">Samsung, super zuinig met automatische wasdosering</h3>
               
@@ -118,7 +118,7 @@
             <p style="margin-top: .5rem">of</p>
             <button class="btn" on:click={()=>accountActive=true}>Ik wil een account maken</button>
             <div>
-                <h5 class="h6">Voordelen van een account</h5>
+                <h4>Voordelen van een account</h4>
                 <p>
                     • Altijd gratis bezorging <br>
                     • Alle aankopen worden geregistreerd

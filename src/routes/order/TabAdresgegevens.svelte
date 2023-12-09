@@ -11,7 +11,7 @@
     <Tooltip>
         <b>Geen account.</b> Een veelgehoorde klacht was dat er een account moest worden aangemaakt. Weer een wachtwoord aanmaken en na het aanmaken zal de gebruiker nu vast ongewenste mail gaan ontvangen. Biedt de optie om ook als eenmalige gast te kopen aan, en geef deze optie duidelijk weer.
     </Tooltip>
-    <h2 class="h4">Adresgegevens</h2>
+    <h2>Adresgegevens</h2>
     <label for="aanhef">Aanhef</label>
     <div class="flex-row">
         <label class="checkbox">
@@ -60,12 +60,14 @@
         <Input 
             label="Straatnaam"
             clickedText="Straatnaam"
+            disabled={true}
             bind:clicked={adressActive}/>
     </div>
     <div class="flex-stretch">
         <Input 
             label="Plaats"
             clickedText="Plaatsnaam"
+            disabled={true}
             bind:clicked={adressActive}/>
     </div>
 
@@ -74,7 +76,7 @@
     </Tooltip>
     <div class="flex-stretch">
         <Input 
-            label="Emailadres"
+            label="E-mailadres"
             clickedText="mail@klantnl"
             clickedState="error"
             bottomLabel="Er zit een fout in uw emailadres"
