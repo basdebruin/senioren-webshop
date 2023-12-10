@@ -177,10 +177,15 @@
                 width: 100%;
                 gap: .5rem;
                 align-items: flex-start;
+                justify-content: space-between;
 
                 margin-top: 1rem;
+
                 > * {
-                    flex-grow: 1
+                    width: 100%;
+                }
+                > *:first-child {
+                    width: 50%;
                 }
             }
         }
