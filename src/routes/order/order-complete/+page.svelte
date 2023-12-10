@@ -24,7 +24,7 @@
             <div class="columns">
                 <p class="column">
                     <b>Bezorgadres</b> <br>
-                    Naam van de klant <br>
+                    Jan de Vries <br>
                     Niemweg 12 <br>
                     243 CS Wilvenhorst
                 </p>

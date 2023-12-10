@@ -87,7 +87,7 @@
                     <div class="summary">
                         <p><b>Adres</b></p>
                         <p>
-                            Naam van de klant <br>
+                            Jan de Vries <br>
                             Niemweg 12 <br>
                             1243 CS Wilvenhorst
                         </p>
@@ -111,7 +111,7 @@
         {#if stepIndex == 3}
             <div>
                 <a class="btn btn-primary btn-bestellen" href="/order/order-complete">Bestelling betalen</a>
-                <p style="margin-top: 1rem">U gaat nu naar de website van uw bank</p>
+                <p style="margin-top: 1rem">Met 'Bestelling betalen' ga je naar de website van jouw bank </p>
             </div>
         {/if}
         {#if stepIndex==1}

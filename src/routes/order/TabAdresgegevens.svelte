@@ -28,16 +28,16 @@
     <div class="flex-stretch">
         <Input 
             label="Voornaam"
-            clickedText="Naam"
+            clickedText="Jan"
             bind:clicked={nameActive}/>
         <Input 
             label="Tussenv."
-            clickedText="van"
+            clickedText="de"
             width="60%"
             bind:clicked={nameActive}/>
         <Input 
             label="Achternaam"
-            clickedText="Klant"
+            clickedText="Vries"
             bind:clicked={nameActive}/>
     </div>
 
