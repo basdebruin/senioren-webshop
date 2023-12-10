@@ -48,25 +48,25 @@
     <div class="flex-row">
         <Input 
             label="Postcode"
-            clickedText="1234AB"
+            clickedText="1243CS"
             bind:clicked={adressActive}/>
         <Input 
             label="Huisnummer"
-            clickedText="1"
+            clickedText="12"
             bind:clicked={adressActive}/>
     </div>
 
     <div class="flex-stretch">
         <Input 
             label="Straatnaam"
-            clickedText="Straatnaam"
+            clickedText="Niemweg"
             disabled={true}
             bind:clicked={adressActive}/>
     </div>
     <div class="flex-stretch">
         <Input 
             label="Plaats"
-            clickedText="Plaatsnaam"
+            clickedText="Wilvenhorst"
             disabled={true}
             bind:clicked={adressActive}/>
     </div>
