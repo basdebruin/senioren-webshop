@@ -64,11 +64,11 @@
 {#if showMerken}
     <label>
         <input type="checkbox" on:click={click()}>
-        Merk 1 <span>(2)</span>
+        Siemens <span>(2)</span>
     </label>
     <label>
         <input type="checkbox" on:click={click()}>
-        Merk 2 <span>(3)</span>
+        LG <span>(3)</span>
     </label>
 {/if}
 <a class="link" href="#merken" on:click={()=>showMerken=!showMerken}>Klik hier voor {showMerken ? "minder" : "meer"} merken</a>
