@@ -9,7 +9,7 @@
     ]
 </script>
 
-<div class="column">
+<div class="column col-7">
     <h2>Verzendgegevens</h2>
     <div class="verzendgegevens">
         <Tooltip offsetLeft={210} offsetTop={25}>
@@ -28,6 +28,9 @@
                 </label>
             {/each}
         </div>
+        <p style="margin-top: 2rem">
+            Prijs: <b>Gratis</b>
+        </p>
     </div>
 </div>
 
@@ -35,6 +38,7 @@
     .verzendgegevens {
         border: solid 2px var(--highlight-color);
         padding: 1rem;
+        padding-bottom: 0;
         margin-bottom: 1rem;
 
         > h3, > label {
@@ -43,16 +47,18 @@
 
         .date-list {
             display: flex;
+            width: 100%;
             gap: .5rem;
+            transform: translateX(-.4rem);
 
             label {
                 display: block;
-                width: 100%;
-                padding: 1rem;
+                width: 25%;
+                padding: 2rem 1rem;
                 margin: 0;
 
                 * {
-                    margin: 1rem;
+                    margin: 0;
                 }
             }
             input:checked + label {
@@ -62,6 +68,8 @@
 
             input {
                 visibility: hidden;
+                width: 0; height: 0;
+                margin: 0;
             }
         }
     }
