@@ -90,7 +90,7 @@
             </a>
         </section>
         <section>
-            <a class="btn btn-primary" href="/shopping-cart">
+            <a class="btn btn-primary" href="/shopping-cart" style="position: relative">
                 <i class="ri-shopping-basket-2-line"></i>
                 Winkelmandje
                 {#if $shoppingCartFull}
@@ -138,7 +138,7 @@
 
         .shopping-cart-indicator {
             position: absolute;
-            top: 0px; right: 5px;
+            top: -15px; right: -15px;
             width: 30px;
             height: 30px;
             padding: .1rem;
