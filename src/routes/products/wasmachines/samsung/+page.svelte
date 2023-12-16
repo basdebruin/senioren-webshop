@@ -1,6 +1,6 @@
 <script>
     import Explainer from "$lib/Tooltip/Explainer.svelte";
-import Tooltip from "$lib/Tooltip/Tooltip.svelte";
+    import Tooltip from "$lib/Tooltip/Tooltip.svelte";
     import { shoppingCartFull } from "$lib/stores";
     import ImageGallery from "./ImageGallery.svelte";
     import Reviews from "./Reviews.svelte";
@@ -11,7 +11,7 @@ import Tooltip from "$lib/Tooltip/Tooltip.svelte";
 
 <div class="container grid-xl" style="margin: 2rem auto">
     <!-- Breadcrumb -->
-    <a href="/home" class="btn btn-primary">
+    <a href="/products/wasmachines" class="btn btn-primary">
         <i class="ri-arrow-left-s-line"></i> Terug
     </a>
     <ul class="breadcrumb" style="display: inline-block; margin-left: 1rem">
