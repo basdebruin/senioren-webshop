@@ -50,10 +50,10 @@
 
             <h3>
                 Omschrijving
-                <Tooltip offsetLeft={200}>
-                    <b>Weinig inspanning.</b> De oudere bezoeker leest meestal goed, is doorgaans geen scannende lezer. Daarom is een overzichtelijke, niet al te langer tekst, prettig. Gebruik daarbij duidelijke en ruim opgezette bulletpoints, want dit helpt de bezoeker om, zonder veel inspanning, een beeld te krijgen van een product. Gaat het over een gebruiksartikel? Zeg dan iets over het gewicht, de grootte of de bedienbaarheid, eventueel ondersteund met foto's. Geef uitleg bij technische termen of Engelstalige woorden.
-                </Tooltip>
             </h3>
+            <Tooltip offsetLeft={175} offsetTop={-10}>
+                <b>Weinig inspanning.</b> De oudere bezoeker leest meestal goed, is doorgaans geen scannende lezer. Daarom is een overzichtelijke, niet al te langer tekst, prettig. Gebruik daarbij duidelijke en ruim opgezette bulletpoints, want dit helpt de bezoeker om, zonder veel inspanning, een beeld te krijgen van een product. Gaat het over een gebruiksartikel? Zeg dan iets over het gewicht, de grootte of de bedienbaarheid, eventueel ondersteund met foto's. Geef uitleg bij technische termen of Engelstalige woorden.
+            </Tooltip>
             <ul>
                 <li>Doseert altijd de juiste hoeveelheid wasmiddel en wasverzachter dankzij Autodose (
                     <Explainer title="Autodose">

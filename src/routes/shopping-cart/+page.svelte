@@ -1,7 +1,6 @@
 <script lang="ts">
     import Tooltip from "$lib/Tooltip/Tooltip.svelte";
-import { shoppingCartFull } from "$lib/stores";
-    import Product from "../products/Product.svelte";
+    import { shoppingCartFull } from "$lib/stores";
     import EnergieLabel from "../products/wasmachines/EnergieLabel.svelte";
 </script>
 
@@ -28,9 +27,9 @@ import { shoppingCartFull } from "$lib/stores";
             Terug
         </a>
         <div class="spacer" style="height: 2rem"></div>
-        <h1>Je bestelling</h1>
-        <Tooltip offsetLeft={180} offsetTop={-14}>
-            <b>Jouw bestelling.</b> Regelmatig is deze fase van bestellen voor webshops een moment om de bezoeker te prikkelen voor andere nevenartikelen: "wat anderen kochten" of "heb je ook hier aan gedacht?". Dit kan afleidend zijn en soms ook verwarrend en meermaals hebben wij de deelnemers zien switchen om daarna niet meer terug te komen. En dan nog een tip.
+        <h1>Jouw bestelling</h1>
+        <Tooltip offsetLeft={210} offsetTop={-14}>
+            <b>Jouw bestelling.</b> Regelmatig is deze fase van bestellen voor webshops een moment om de bezoeker te prikkelen voor andere nevenartikelen: "wat anderen kochten" of "heb je ook hier aan gedacht?". Dit kan afleidend zijn en soms ook verwarrend en meermaals hebben wij de deelnemers zien switchen om daarna niet meer terug te komen.
         </Tooltip>
 
         <div class="product">
