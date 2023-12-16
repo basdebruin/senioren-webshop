@@ -17,6 +17,14 @@
 
     let accountActive = false;
     let accountPasswordShown = false;
+
+    // go back to previous step if not on step 0
+    function clickBack(event : Event) {
+        if (stepIndex == 0) return;
+
+        event.preventDefault();
+        stepIndex--;
+    }
 </script>
 
 <div class="spacer" style="height: 100px"></div>
@@ -26,7 +34,9 @@
     <!-- Navigation -->
     <div class="order-navigation">
         <!-- Steps -->
-        <a href="/shopping-cart" class="btn btn-primary" style="max-height: 2.4rem"><i class="ri-arrow-left-s-line"></i> Terug</a>
+        <a href="/shopping-cart" class="btn btn-primary" style="max-height: 2.4rem" on:click={clickBack}>
+            <i class="ri-arrow-left-s-line"></i> Terug
+        </a>
         <ul class="step">
             {#each steps as step, index}
                 <li class="step-item" class:active={stepIndex >= index}>
