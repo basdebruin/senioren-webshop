@@ -42,7 +42,7 @@
             
             <!-- Products -->
             <Tooltip offsetLeft={-20} offsetTop={25}>
-                <b>Vergelijken: 3 producten boven de 'vouw'.</b> De oudere gebruiker wil makkelijk kunnen vergelijken, door drie producten in beeld te hebben met de belangrijkste ken-merken kan de bezoeker al een voorverkenning doen zonder naar 'meer informatie' te gaan. Sommige deelnemers gingen vanaf hier meteen door naar 'bestel nu'
+                <b>Vergelijken.</b> De oudere gebruiker wil makkelijk kunnen vergelijken. Door drie producten in beeld te hebben met de belangrijkste kenmerken kan de bezoeker al een voorverkenning doen zonder naar 'meer informatie' te gaan.
             </Tooltip>
             <Product 
                 title="Samsung superzuinig met automatisch wasmiddeldosering" 
