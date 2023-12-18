@@ -149,7 +149,7 @@
         </div>
         <div class="column">
             <Tooltip isLeft={true}>
-                <b>Reclame/Acties.</b> In ons onderzoek bleek er weinig aandacht te zijn voor actiebanners, meestal zorgden de banners juist voor afleiding of verwarring. Een enkele keer klikte men erop door maar dit waren meestal eenvoudige banners met een heldere boodschap.
+                <b>Reclame/Acties.</b> Banners zorgen voor afleiding of verwarring. Een eenvoudige banner met heldere boodschap kan wel.
             </Tooltip>
             <a href="#advertentie" class="btn" style="transform: scale(1.2)">Meer over deze actie</a>
         </div>
@@ -162,9 +162,6 @@
 
 <div class="container grid-xl">
 <div class="photo-columns columns">
-    <Tooltip>
-        <b>Aankleding.</b> Deze artikeltjes zijn puur ter aankleding en dienen geen doel. De oudere gebruikers in in ons onderzoek gingen hieraan voorbij.
-    </Tooltip>
     <div class="column col-4">
         <img src="/images/stock-photo-ipad.png" alt="" height="230px" class="img-fit-cover">
         <h3 class="h4">Overal via je tablet tv kijken</h3>
