@@ -76,7 +76,7 @@
             </ul>
             
             <Tooltip offsetLeft={-20} offsetTop={35}>
-                <b>Navigeren.</b> Zorg ervoor de gebruiker makkelijk heen en terug kan, zonder uit de bestelflow te geraken. Gebruik knoppen van minimaal 25x25 pixels formaat, let altijd op zaken als contrast en helder taalgebruik. Een knop in het bestelproces met de naam 'verzenden' in plaats van bijvoorbeeld 'verder met bestellen' leidde ertoe dat een van de deelnemers zo verward was dat zij van de aankoop afzag: 'Hoe kan het nu verzonden worden zonder dat ik mijn adres heb opgegeven?'
+                <b>Navigeren.</b> Zorg ervoor dat de gebruiker makkelijk heen en terug kan, zonder uit de bestelflow te geraken. Gebruik knoppen van minimaal 25x25 pixels formaat. Let op het contrast en helder taalgebruik. Een knop in het bestelproces met de naam 'verzenden' in plaats van bijvoorbeeld 'verder met bestellen' kan ertoe leiden dat gebruikers afhaken.
             </Tooltip>
             <div class="desc-buttons">
                 <a href="/products/wasmachines" class="btn">Terug naar overzicht</a>
@@ -109,7 +109,7 @@
     <!-- Reviews -->
     <h3>Referenties</h3>
     <Tooltip offsetLeft={150} offsetTop={-8}>
-        <b>Recensies.</b> De mening van andere kopers doet ertoe (al zijn er ouderen die recensies juist wantrouwen, want 'die schrijven ze vast zelf'). Regelmatig werd er ook nog op externe reviewsites gekeken. Plaats bovenin de plus- en minpunten en daarna het de recensie opdat men sneller de belangrijke info tot zich kan nemen.
+        <b>Recensies.</b> De mening van andere kopers doet ertoe (al zijn er ouderen die recensies juist wantrouwen, want 'die schrijven ze vast zelf'). Plaats bovenin de plus- en minpunten en daarna de recensie zodat men sneller de belangrijke info tot zich kan nemen.
     </Tooltip>
 
     <Reviews />
