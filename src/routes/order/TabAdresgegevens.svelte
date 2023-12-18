@@ -9,7 +9,7 @@
 
 <div class="column">
     <Tooltip>
-        <b>Geen account.</b> Een veelgehoorde klacht was dat er een account moest worden aangemaakt. Weer een wachtwoord aanmaken en na het aanmaken zal de gebruiker nu vast ongewenste mail gaan ontvangen. Biedt de optie om ook als eenmalige gast te kopen aan, en geef deze optie duidelijk weer.
+        <b>Geen account.</b> Gebruikers vinden het vervelend om een account aan te maken. Ze zijn bang voor ongewenste mail. Biedt de optie om ook als eenmalige gast te kopen aan, en geef deze optie duidelijk weer.
     </Tooltip>
     <h2>Adresgegevens</h2>
     <label for="aanhef">Aanhef</label>

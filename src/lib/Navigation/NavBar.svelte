@@ -81,7 +81,7 @@
         <section>
             {#if showTooltip}
                 <Tooltip offsetLeft={15} offsetTop={50} isLeft={true}>
-                    <b>Herkenbaarheid en bevestiging.</b> In het onderzoek vonden diverse deelnemers het spannend om op een icoon te klikken. Iconen zijn niet voor iedereen meteen duidelijk. Maak dus gebruik van herkenbare iconen, zoals die op de meeste webshops te zien zijn, in combinatie met tekst.
+                    <b>Herkenbaarheid.</b> Iconen zijn niet voor iedereen meteen duidelijk. Maak dus gebruik van herkenbare iconen, zoals die in de meeste webshops te zien zijn, in combinatie met tekst.
                 </Tooltip>
             {/if}
             <a class="btn btn-primary" href="/account">

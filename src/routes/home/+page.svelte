@@ -19,7 +19,15 @@
     <h1 class="text-primary">
         Kies een product
         <Tooltip offsetLeft={240}>
-            <b>Zoeken en vinden. </b> Veel webshops tonen een banner met een actie of aanbieding. Voor de oudere online bezoeker kan dit te veel aandacht vragen, waardoor het hen afleidt van wat zij zoeken. Zorg ervoor dat er meerdere manieren zijn waarop de bezoeker je aanbod kan vinden. Bijvoorbeeld via een menu, een zoekvenster en gepresenteerd op de homepage. Het zoekvenster wordt veel gebruikt door oudere online bezoekers! Zet je aanbod gecategoriseerd op de homepage, met een afbeelding van het product mét tekst. Maak bij voorkeur gebruik van platte afbeeldingen met weinig toeters en bellen en afleidende kleuren. Let erop dat de aanklikvelden groot genoeg zijn en rondom witruimte hebben, zodat ze makkelijk aangeklikt kunnen worden. 
+            <b>Zoeken en vinden. </b>
+            <ul>
+                <li>Veel webshops tonen een banner met een actie of aanbieding. Voor de oudere online bezoeker kan dit te veel aandacht vragen, waardoor het hen afleidt van wat zij zoeken.</li>
+                <li>Zorg ervoor dat er meerdere manieren zijn waarop de bezoeker je aanbod kan vinden. Bijvoorbeeld via een menu, een zoekvenster en gepresenteerd op de homepage. </li>
+                <li>Het zoekvenster wordt veel gebruikt door oudere online bezoekers!</li>
+                <li>Zet je aanbod gecategoriseerd op de homepage, met een afbeelding van het product mét tekst.</li>
+                <li>Maak bij voorkeur gebruik van platte afbeeldingen met weinig toeters en bellen en afleidende kleuren.</li>
+                <li>Let erop dat de aanklikvelden groot genoeg zijn en rondom witruimte hebben, zodat ze makkelijk aangeklikt kunnen worden.</li>
+            </ul>
         </Tooltip>
     </h1>
 
@@ -149,7 +157,7 @@
         </div>
         <div class="column">
             <Tooltip isLeft={true}>
-                <b>Reclame/Acties.</b> In ons onderzoek bleek er weinig aandacht te zijn voor actiebanners, meestal zorgden de banners juist voor afleiding of verwarring. Een enkele keer klikte men erop door maar dit waren meestal eenvoudige banners met een heldere boodschap.
+                <b>Reclame/Acties.</b> Banners zorgen voor afleiding of verwarring. Een eenvoudige banner met heldere boodschap kan wel.
             </Tooltip>
             <a href="#advertentie" class="btn" style="transform: scale(1.2)">Meer over deze actie</a>
         </div>
@@ -162,9 +170,6 @@
 
 <div class="container grid-xl">
 <div class="photo-columns columns">
-    <Tooltip>
-        <b>Aankleding.</b> Deze artikeltjes zijn puur ter aankleding en dienen geen doel. De oudere gebruikers in in ons onderzoek gingen hieraan voorbij.
-    </Tooltip>
     <div class="column col-4">
         <img src="/images/stock-photo-ipad.png" alt="" height="230px" class="img-fit-cover">
         <h3 class="h4">Overal via je tablet tv kijken</h3>
