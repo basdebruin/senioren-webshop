@@ -19,7 +19,15 @@
     <h1 class="text-primary">
         Kies een product
         <Tooltip offsetLeft={240}>
-            <b>Zoeken en vinden. </b> Veel webshops tonen een banner met een actie of aanbieding. Voor de oudere online bezoeker kan dit te veel aandacht vragen, waardoor het hen afleidt van wat zij zoeken. Zorg ervoor dat er meerdere manieren zijn waarop de bezoeker je aanbod kan vinden. Bijvoorbeeld via een menu, een zoekvenster en gepresenteerd op de homepage. Het zoekvenster wordt veel gebruikt door oudere online bezoekers! Zet je aanbod gecategoriseerd op de homepage, met een afbeelding van het product mét tekst. Maak bij voorkeur gebruik van platte afbeeldingen met weinig toeters en bellen en afleidende kleuren. Let erop dat de aanklikvelden groot genoeg zijn en rondom witruimte hebben, zodat ze makkelijk aangeklikt kunnen worden.
+            <b>Zoeken en vinden. </b>
+            <ul>
+                <li>Veel webshops tonen een banner met een actie of aanbieding. Voor de oudere online bezoeker kan dit te veel aandacht vragen, waardoor het hen afleidt van wat zij zoeken.</li>
+                <li>Zorg ervoor dat er meerdere manieren zijn waarop de bezoeker je aanbod kan vinden. Bijvoorbeeld via een menu, een zoekvenster en gepresenteerd op de homepage. </li>
+                <li>Het zoekvenster wordt veel gebruikt door oudere online bezoekers!</li>
+                <li>Zet je aanbod gecategoriseerd op de homepage, met een afbeelding van het product mét tekst.</li>
+                <li>Maak bij voorkeur gebruik van platte afbeeldingen met weinig toeters en bellen en afleidende kleuren.</li>
+                <li>Let erop dat de aanklikvelden groot genoeg zijn en rondom witruimte hebben, zodat ze makkelijk aangeklikt kunnen worden.</li>
+            </ul>
         </Tooltip>
     </h1>
 
