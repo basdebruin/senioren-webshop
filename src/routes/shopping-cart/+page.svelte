@@ -29,7 +29,7 @@
         <div class="spacer" style="height: 2rem"></div>
         <h1>Jouw bestelling</h1>
         <Tooltip offsetLeft={210} offsetTop={-14}>
-            <b>Jouw bestelling.</b> Regelmatig is deze fase van bestellen voor webshops een moment om de bezoeker te prikkelen voor andere nevenartikelen: "wat anderen kochten" of "heb je ook hier aan gedacht?". Dit kan afleidend zijn en soms ook verwarrend en meermaals hebben wij de deelnemers zien switchen om daarna niet meer terug te komen.
+            <b>Jouw bestelling.</b> Regelmatig is deze fase van bestellen voor webshops een moment om de bezoeker te prikkelen voor andere nevenartikelen: "wat anderen kochten" of "heb je ook hier aan gedacht?". Dit kan afleidend zijn en soms ook verwarren waardoor de oudere bezoeker kan afhaken.
         </Tooltip>
 
         <div class="product">
@@ -54,7 +54,7 @@
                     <Tooltip offsetLeft={210} offsetTop={-5} isLeft={true}>
                         <b>Beantwoord de vragen.</b> Zodra het product in het mandje zit, begint men zich af te vragen hoe het zit met de service en de bestelling. Dit is hét moment om dit soort informatie te tonen. Op die manier voorkom je dat de bezoeker ergens anders op de site moet gaan zoeken, en het product vergeet of niet meer terug kan vinden.
                         <br><br>
-                        <b>Product verwijderen. </b> In het onderzoek gaven de oudere deelnemers regelmatig aan, dat als ze het product niet wilden hebben, ze het product uit hun mandje wilden halen omdat ze het idee hadden dat ze anders misschien alsnog ergens aan vast zouden zitten. Voeg een knop 'verwijderen' toe, dat stelt de klant gerust.
+                        <b>Product verwijderen.</b> Voeg een knop 'verwijderen' toe, dat stelt de klant gerust. Ze weten dan dat ze nog niet aan de aankoop vastzitten.
                     </Tooltip>
                     <ul>
                         <li>2 jaar garantie</li>
