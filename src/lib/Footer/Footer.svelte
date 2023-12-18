@@ -71,7 +71,7 @@
             <div class="column col-3">
                 {#if isHomepage}
                     <Tooltip isLeft={true}>
-                        <b>Winkel in beeld.</b> Als een webwinkel onbekend is, stelt het de oudere online bezoeker gerust als er een fysieke winkel is. Dan heeft men een plek om op terug te vallen. Het tonen van adresgegevens geeft al vertrouwen maar er waren deelnemers die online verder zochten, om te zien of er ook écht een winkel was. Dus heb je een fysieke winkel? Laat deze zien!
+                        <b>Winkel in beeld.</b> Als een webwinkel onbekend is, stelt het de oudere online bezoeker gerust als er een fysieke winkel is. Dan heeft men een plek om op terug te vallen. Het tonen van adresgegevens geeft al vertrouwen. Heb je een fysieke winkel? Laat deze zien, dat werkt helemaal goed!
                     </Tooltip>
                 {/if}
                 <h3 class="h5">Hoofdkantoor</h3><br>
