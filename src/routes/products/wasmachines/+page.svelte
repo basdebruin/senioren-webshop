@@ -21,7 +21,7 @@
             <a href="#wasmachines">Wasmachines</a> 
         </li>
         <Tooltip offsetLeft={250}>
-            <b>Voor orientatie.</b> “Hoe kom ik terug” is een veelgehoorde vraag in dit onderzoek. Het zoekraken is een heikel punt bij veel oudere bezoekers. Een 'terug' knop helpt enorm. Een kruimelpad met daarin de stappen waar de gebruiker nu zit is ook handig.
+            <b>Voor orientatie.</b> “Hoe kom ik terug”. Het zoekraken is een heikel punt bij veel oudere bezoekers. Een 'terug' knop helpt enorm. Een kruimelpad met daarin de stappen waar de gebruiker nu zit is ook handig.
         </Tooltip>
     </ul>
 
