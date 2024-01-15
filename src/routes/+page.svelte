@@ -25,19 +25,19 @@
 </div>
 
 <article class="columns">
-    <div class="col-7">
+    <div class="column">
         <p>
-            In het onderzoek ‘Senioren en Webshops’, uitgevoerd door Accessibility in de periode mei 2022 tot juli 2023, is gekeken naar het gebruik van webshops door de oudere onlinegebruikers (65 jaar en ouder). Het onderzoek bestond uit twee delen: een online enquête onder leden van de ANBO en gebruikersonderzoeken, waarbij oudere deelnemers werden geobserveerd tijdens het doen van aankopen in webshops.
+            In het onderzoek 'Senioren en Webshops', uitgevoerd door Accessibility in de periode mei 2022 tot juli 2023, is gekeken naar het gebruik van webshops door de oudere onlinegebruikers (65 jaar en ouder). Het onderzoek bestond uit twee delen: een online enquête onder leden van de ANBO en gebruikersonderzoeken, waarbij oudere deelnemers werden geobserveerd tijdens het doen van aankopen in webshops.
         </p>
         <p>
-            Het doel van dit onderzoek was inzichtelijk maken hoe webshops nog toegankelijker gemaakt kunnen worden voor de oudere doelgroep. Dit is belangrijk, omdat de groep ouderen groeit. Als mensen ouder worden, krijgen ze te maken met specifieke ouderdomsbeperkingen. Waar moet je als webshop-bouwer of als webshop-eigenaar dan rekening mee houden voor de interessante klantengroep? De inzichten uit het onderzoek zijn verwerkt in dit prototype. Via tooltips kun je de motivatie achter de designkeuzes lezen. 
+            Het doel van dit onderzoek was inzichtelijk maken hoe webshops nog gebruiksvriendelijker gemaakt kunnen worden voor de oudere doelgroep. Dit is belangrijk, omdat de groep ouderen groeit. Als mensen ouder worden, krijgen ze te maken met specifieke ouderdomsbeperkingen. Waar moet je als webshop-bouwer of als webshop-eigenaar dan rekening mee houden voor de interessante klantengroep? De inzichten uit het onderzoek zijn verwerkt in dit prototype. Via tooltips kun je de motivatie achter de designkeuzes lezen. 
         </p>
         <a href="/home" class="btn">
             Start
             <i class="ri-arrow-right-line"></i>
         </a>
     </div>
-    <div class="col-4">
+    <div class="col-5 image-col">
         <img src="/images/stock-photo-ipad.png" alt="oudere mevrouw op de bank met een ipad">
     </div>
 </article>
@@ -107,5 +107,11 @@
         background-color: white;
         min-height: 100%;
         padding: 1rem;
+    }
+
+    @media (max-width: 900px) {
+        .image-col {
+            display: none;
+        }
     }
 </style>
