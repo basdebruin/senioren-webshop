@@ -32,6 +32,8 @@
         <p>
             Het doel van dit onderzoek was inzichtelijk maken hoe webshops nog gebruiksvriendelijker gemaakt kunnen worden voor de oudere doelgroep. Dit is belangrijk, omdat de groep ouderen groeit. Als mensen ouder worden, krijgen ze te maken met specifieke ouderdomsbeperkingen. Waar moet je als webshop-bouwer of als webshop-eigenaar dan rekening mee houden voor de interessante klantengroep? De inzichten uit het onderzoek zijn verwerkt in dit prototype. Via tooltips kun je de motivatie achter de designkeuzes lezen. 
         </p>
+
+        <a class="link" href="https://www.accessibility.nl/senioren-en-webshops" target="_blank"> Lees meer op de landingspagina <i class="ri-external-link-line"></i> </a>
         <a href="/home" class="btn">
             Start
             <i class="ri-arrow-right-line"></i>
@@ -94,6 +96,15 @@
     article {
         padding: 3rem;
         gap: 2rem;
+    }
+
+    .link {
+        display: block;
+        margin: 0 0 1rem 0;
+
+        i {
+            font-size: .8rem;
+        }
     }
 
     .mobile-warning {
